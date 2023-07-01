@@ -136,7 +136,7 @@ ZMK_DISPLAY_WIDGET_LISTENER(widget_peripheral_status, struct peripheral_status_s
                             output_status_update_cb, get_state)
 ZMK_SUBSCRIPTION(widget_peripheral_status, zmk_split_peripheral_status_changed);
 
-void set_img_src(void *var, lv_anim_value_t val) {
+void set_img_src(void *var, int32_t val) {
     lv_obj_t *img = (lv_obj_t *)var;
     lv_img_set_src(img, images[val]);
 }
