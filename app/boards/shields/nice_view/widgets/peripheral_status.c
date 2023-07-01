@@ -52,7 +52,7 @@ uint8_t images_len;
 
 const void *cat_roll_images[] = {
     &cat_00, &cat_01, &cat_02, &cat_03, &cat_04, &cat_05, &cat_06, &cat_07, &cat_08, &cat_09, &cat_10, &cat_11, &cat_12, &cat_13, &cat_14, &cat_15, &cat_16, &cat_17, &cat_18, &cat_19, &cat_20, &cat_21, &cat_22, &cat_23
-}
+};
 
 
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
