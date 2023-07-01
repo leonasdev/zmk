@@ -242,7 +242,7 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
     LOG_DBG("Set source to cat roll images!");
     lv_anim_init(&widget->anim);
     lv_anim_set_var(&widget->anim, widget->obj);
-    lv_anim_set_time(&widget->anim, 1000);
+    lv_anim_set_time(&widget->anim, 5040);
     lv_anim_set_values(&widget->anim, 0, 167);
     lv_anim_set_exec_cb(&widget->anim, (lv_anim_exec_xcb_t)set_img_src);
     lv_anim_set_repeat_count(&widget->anim, LV_ANIM_REPEAT_INFINITE);
