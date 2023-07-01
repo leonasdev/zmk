@@ -148,8 +148,6 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
     lv_obj_align(top, LV_ALIGN_TOP_RIGHT, BATTERY_OFFSET, 0);
     lv_canvas_set_buffer(top, widget->cbuf, DISP_WIDTH, BATTERY_HEIGHT, LV_IMG_CF_TRUE_COLOR);
 
-    lv_obj_align(art, LV_ALIGN_TOP_LEFT, 0, 0);
-
     LOG_DBG("Set source to cat roll images!");
     lv_anim_init(&widget->anim);
     lv_anim_set_var(&widget->anim, widget->obj);
