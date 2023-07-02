@@ -6,6 +6,7 @@
  */
 
 #include <zephyr/kernel.h>
+#include <zephyr/bluetooth/services/bas.h>
 #include <zephyr/random/rand32.h>
 
 #include <zephyr/logging/log.h>
@@ -438,6 +439,9 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
     lv_anim_start(&widget->anim);
 
     sys_slist_append(&widgets, &widget->node);
+
+    widget_battery_status_init();
+    widget_peripheral_status_init();
 
     return 0;
 }
