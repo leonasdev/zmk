@@ -498,7 +498,7 @@ void set_img_src(void *var, int32_t val) {
     lv_img_set_src(img, images[val]);
     lv_obj_align(img, LV_ALIGN_TOP_LEFT, 0, 0);
 
-    draw_top(widgetRef->obj, widgetRef->cbuf, widgetRef->state);
+    // draw_top(widgetRef->obj, widgetRef->cbuf, widgetRef->state);
 }
 
 int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
