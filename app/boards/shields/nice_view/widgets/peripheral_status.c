@@ -496,7 +496,6 @@ struct zmk_widget_status *widgetRef;
 void set_img_src(void *var, int32_t val) {
     lv_obj_t *img = (lv_obj_t *)var;
     lv_img_set_src(img, images[val]);
-    lv_obj_align(img, LV_ALIGN_TOP_LEFT, 0, 0);
 
     // draw_top(widgetRef->obj, widgetRef->cbuf, widgetRef->state);
 }
