@@ -418,7 +418,7 @@ void set_img_src(void *var, int32_t val) {
     lv_img_set_src(img, images[val]);
 }
 
-eripheral_status_state {
+struct peripheral_status_state {
     bool connected;
 };
 
