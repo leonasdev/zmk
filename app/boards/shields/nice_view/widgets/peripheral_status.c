@@ -428,15 +428,15 @@ static void draw_top(lv_obj_t *widget, lv_color_t cbuf[], struct status_state st
     // Fill background
     lv_canvas_draw_rect(canvas, 0, 0, CANVAS_SIZE, CANVAS_SIZE, &rect_black_dsc);
 
-    // Draw battery
-    draw_battery(canvas, state);
+    // // Draw battery
+    // draw_battery(canvas, state);
 
-    // Draw output status
-    lv_canvas_draw_text(canvas, 0, 0, CANVAS_SIZE, &label_dsc,
-                        state.connected ? LV_SYMBOL_WIFI : LV_SYMBOL_CLOSE);
+    // // Draw output status
+    // lv_canvas_draw_text(canvas, 0, 0, CANVAS_SIZE, &label_dsc,
+    //                     state.connected ? LV_SYMBOL_WIFI : LV_SYMBOL_CLOSE);
 
-    // Rotate canvas
-    rotate_canvas(canvas, cbuf);
+    // // Rotate canvas
+    // rotate_canvas(canvas, cbuf);
 }
 
 static void set_battery_status(struct zmk_widget_status *widget,
@@ -447,7 +447,7 @@ static void set_battery_status(struct zmk_widget_status *widget,
 
     widget->state.battery = state.level;
 
-    // draw_top(widget->obj, widget->cbuf, widget->state);
+    draw_top(widget->obj, widget->cbuf, widget->state);
 }
 
 static void battery_status_update_cb(struct battery_status_state state) {
@@ -498,7 +498,7 @@ void set_img_src(void *var, int32_t val) {
     lv_img_set_src(img, images[val]);
     lv_obj_align(img, LV_ALIGN_TOP_LEFT, 0, 0);
 
-    // draw_top(widgetRef->obj, widgetRef->cbuf, widgetRef->state);
+    draw_top(widgetRef->obj, widgetRef->cbuf, widgetRef->state);
 }
 
 int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
@@ -507,7 +507,7 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
     lv_obj_set_size(widget->obj, 160, 68);
     lv_obj_t *top = lv_canvas_create(widget->obj);
     lv_obj_align(top, LV_ALIGN_TOP_RIGHT, 0, 0);
-    lv_canvas_set_buffer(top, widget->cbuf, DISP_WIDTH, BATTERY_HEIGHT, LV_IMG_CF_TRUE_COLOR);
+    lv_canvas_set_buffer(top, widget->cbuf, BATTERY_HEIGHT, DISP_WIDTH, LV_IMG_CF_TRUE_COLOR);
 
     // Params
     int anim_len = 78;
