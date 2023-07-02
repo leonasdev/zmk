@@ -436,7 +436,7 @@ static void draw_top(lv_obj_t *widget, lv_color_t cbuf[], struct status_state st
                         state.connected ? LV_SYMBOL_WIFI : LV_SYMBOL_CLOSE);
 
     // Rotate canvas
-    rotate_canvas(canvas, cbuf);
+    // rotate_canvas(canvas, cbuf);
 }
 
 static void set_battery_status(struct zmk_widget_status *widget,
@@ -496,8 +496,6 @@ struct zmk_widget_status *widgetRef;
 void set_img_src(void *var, int32_t val) {
     lv_obj_t *img = (lv_obj_t *)var;
     lv_img_set_src(img, images[val]);
-
-    // draw_top(widgetRef->obj, widgetRef->cbuf, widgetRef->state);
 }
 
 int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
