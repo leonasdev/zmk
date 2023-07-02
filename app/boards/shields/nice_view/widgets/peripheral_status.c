@@ -426,7 +426,7 @@ static void draw_top(lv_obj_t *widget, lv_color_t cbuf[], struct status_state st
     init_rect_dsc(&rect_black_dsc, LVGL_BACKGROUND);
 
     // Fill background
-    lv_canvas_draw_rect(canvas, 0, 0, CANVAS_SIZE, CANVAS_SIZE, &rect_black_dsc);
+    lv_canvas_draw_rect(canvas, 0, 0, BATTERY_HEIGHT, DISP_WIDTH, &rect_black_dsc);
 
     // // Draw battery
     // draw_battery(canvas, state);
