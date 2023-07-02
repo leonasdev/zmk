@@ -426,7 +426,7 @@ static void draw_top(lv_obj_t *widget, lv_color_t cbuf[], struct status_state st
     init_rect_dsc(&rect_black_dsc, LVGL_BACKGROUND);
 
     // Fill background
-    lv_canvas_draw_rect(canvas, 0, 0, DISP_WIDTH, BATTERY_HEIGHT, &rect_black_dsc);
+    lv_canvas_draw_rect(canvas, 0, 0, DISP_WIDTH, 20, &rect_black_dsc);
 
     // Draw battery
     draw_battery(canvas, state);
@@ -480,7 +480,7 @@ static void set_connection_status(struct zmk_widget_status *widget,
                                   struct peripheral_status_state state) {
     widget->state.connected = state.connected;
 
-    // draw_top(widget->obj, widget->cbuf, widget->state);
+    draw_top(widget->obj, widget->cbuf, widget->state);
 }
 
 static void output_status_update_cb(struct peripheral_status_state state) {
@@ -504,7 +504,7 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
     lv_obj_set_size(widget->obj, 160, DISP_WIDTH);
     lv_obj_t *top = lv_canvas_create(widget->obj);
     lv_obj_align(top, LV_ALIGN_TOP_RIGHT, DISP_WIDTH, 0);
-    lv_canvas_set_buffer(top, widget->cbuf, DISP_WIDTH, BATTERY_HEIGHT, LV_IMG_CF_TRUE_COLOR);
+    lv_canvas_set_buffer(top, widget->cbuf, DISP_WIDTH, 20, LV_IMG_CF_TRUE_COLOR);
 
     // Params
     int anim_len = 78;
