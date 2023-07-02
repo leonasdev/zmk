@@ -515,6 +515,7 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
     LOG_DBG("Setting animation!");
     lv_anim_init(&widget->anim);
     lv_anim_set_var(&widget->anim, widget->obj);
+     lv_obj_align(widget->obj, LV_ALIGN_TOP_LEFT, 0, 0);
     lv_anim_set_time(&widget->anim, anim_len*per_frame_time_in_ms);
     lv_anim_set_values(&widget->anim, 0, anim_len-1);
     lv_anim_set_exec_cb(&widget->anim, (lv_anim_exec_xcb_t)set_img_src);
