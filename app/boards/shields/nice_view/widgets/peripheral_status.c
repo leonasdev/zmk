@@ -436,7 +436,7 @@ static void draw_top(lv_obj_t *widget, lv_color_t cbuf[], struct status_state st
                         state.connected ? LV_SYMBOL_WIFI : LV_SYMBOL_CLOSE);
 
     // Rotate canvas
-    rotate_canvas(canvas, cbuf);
+    // rotate_canvas(canvas, cbuf);
 }
 
 static void set_battery_status(struct zmk_widget_status *widget,
