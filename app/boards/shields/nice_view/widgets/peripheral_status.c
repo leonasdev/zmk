@@ -496,7 +496,7 @@ struct zmk_widget_status *widgetRef;
 void set_img_src(void *var, int32_t val) {
     lv_obj_t *img = (lv_obj_t *)var;
     lv_img_set_src(img, images[val]);
-    // lv_obj_align(img, LV_ALIGN_TOP_LEFT, 0, 0);
+    lv_obj_align(img, LV_ALIGN_TOP_LEFT, 0, 0);
 
     // draw_top(widgetRef->obj, widgetRef->cbuf, widgetRef->state);
 }
@@ -506,8 +506,8 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
     
     lv_obj_set_size(widget->obj, 160, 68);
     lv_obj_t *top = lv_canvas_create(widget->obj);
-    // lv_obj_align(top, LV_ALIGN_TOP_RIGHT, 0, 0);
-    // lv_canvas_set_buffer(top, widget->cbuf, 68, 68, LV_IMG_CF_TRUE_COLOR);
+    lv_obj_align(top, LV_ALIGN_TOP_RIGHT, 0, 0);
+    lv_canvas_set_buffer(top, widget->cbuf, DISP_WIDTH, BATTERY_HEIGHT, LV_IMG_CF_TRUE_COLOR);
 
     // Params
     int anim_len = 78;
