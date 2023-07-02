@@ -279,6 +279,55 @@ LV_IMG_DECLARE(rocket_jump_049)
 const void *rocket_jump_images[] = {
 &rocket_jump_000, &rocket_jump_001, &rocket_jump_002, &rocket_jump_003, &rocket_jump_004, &rocket_jump_005, &rocket_jump_006, &rocket_jump_007, &rocket_jump_008, &rocket_jump_009, &rocket_jump_010, &rocket_jump_011, &rocket_jump_012, &rocket_jump_013, &rocket_jump_014, &rocket_jump_015, &rocket_jump_016, &rocket_jump_017, &rocket_jump_018, &rocket_jump_019, &rocket_jump_020, &rocket_jump_021, &rocket_jump_022, &rocket_jump_023, &rocket_jump_024, &rocket_jump_025, &rocket_jump_026, &rocket_jump_027, &rocket_jump_028, &rocket_jump_029, &rocket_jump_030, &rocket_jump_031, &rocket_jump_032, &rocket_jump_033, &rocket_jump_034, &rocket_jump_035, &rocket_jump_036, &rocket_jump_037, &rocket_jump_038, &rocket_jump_039, &rocket_jump_040, &rocket_jump_041, &rocket_jump_042, &rocket_jump_043, &rocket_jump_044, &rocket_jump_045, &rocket_jump_046, &rocket_jump_047, &rocket_jump_048, &rocket_jump_049};
 
+LV_IMG_DECLARE(dance_000)
+LV_IMG_DECLARE(dance_001)
+LV_IMG_DECLARE(dance_002)
+LV_IMG_DECLARE(dance_003)
+LV_IMG_DECLARE(dance_004)
+LV_IMG_DECLARE(dance_005)
+LV_IMG_DECLARE(dance_006)
+LV_IMG_DECLARE(dance_007)
+LV_IMG_DECLARE(dance_008)
+LV_IMG_DECLARE(dance_009)
+LV_IMG_DECLARE(dance_010)
+LV_IMG_DECLARE(dance_011)
+LV_IMG_DECLARE(dance_012)
+LV_IMG_DECLARE(dance_013)
+LV_IMG_DECLARE(dance_014)
+LV_IMG_DECLARE(dance_015)
+LV_IMG_DECLARE(dance_016)
+LV_IMG_DECLARE(dance_017)
+LV_IMG_DECLARE(dance_018)
+LV_IMG_DECLARE(dance_019)
+LV_IMG_DECLARE(dance_020)
+LV_IMG_DECLARE(dance_021)
+LV_IMG_DECLARE(dance_022)
+LV_IMG_DECLARE(dance_023)
+LV_IMG_DECLARE(dance_024)
+LV_IMG_DECLARE(dance_025)
+LV_IMG_DECLARE(dance_026)
+LV_IMG_DECLARE(dance_027)
+LV_IMG_DECLARE(dance_028)
+LV_IMG_DECLARE(dance_029)
+LV_IMG_DECLARE(dance_030)
+LV_IMG_DECLARE(dance_031)
+LV_IMG_DECLARE(dance_032)
+LV_IMG_DECLARE(dance_033)
+LV_IMG_DECLARE(dance_034)
+LV_IMG_DECLARE(dance_035)
+LV_IMG_DECLARE(dance_036)
+LV_IMG_DECLARE(dance_037)
+LV_IMG_DECLARE(dance_038)
+LV_IMG_DECLARE(dance_039)
+LV_IMG_DECLARE(dance_040)
+LV_IMG_DECLARE(dance_041)
+LV_IMG_DECLARE(dance_042)
+LV_IMG_DECLARE(dance_043)
+LV_IMG_DECLARE(dance_044)
+LV_IMG_DECLARE(dance_045)
+const void *dance_images[] = {
+&dance_000, &dance_001, &dance_002, &dance_003, &dance_004, &dance_005, &dance_006, &dance_007, &dance_008, &dance_009, &dance_010, &dance_011, &dance_012, &dance_013, &dance_014, &dance_015, &dance_016, &dance_017, &dance_018, &dance_019, &dance_020, &dance_021, &dance_022, &dance_023, &dance_024, &dance_025, &dance_026, &dance_027, &dance_028, &dance_029, &dance_030, &dance_031, &dance_032, &dance_033, &dance_034, &dance_035, &dance_036, &dance_037, &dance_038, &dance_039, &dance_040, &dance_041, &dance_042, &dance_043, &dance_044, &dance_045};
+
 
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
 
@@ -292,9 +341,9 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
     // lv_obj_set_size(widget->obj, 160, 68);
 
     // Params
-    int anim_len = 50;
-    int per_frame_time_in_ms = 30;
-    images = rocket_jump_images;
+    int anim_len = 46;
+    int per_frame_time_in_ms = 70;
+    images = dance_images;
 
     // Init animations
     LOG_DBG("Setting animation!");
