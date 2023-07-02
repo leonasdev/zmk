@@ -426,17 +426,17 @@ static void draw_top(lv_obj_t *widget, lv_color_t cbuf[], struct status_state st
     init_rect_dsc(&rect_black_dsc, LVGL_BACKGROUND);
 
     // Fill background
-    lv_canvas_draw_rect(canvas, 0, 0, BATTERY_HEIGHT, DISP_WIDTH, &rect_black_dsc);
+    lv_canvas_draw_rect(canvas, 0, 0, 168, 20, &rect_black_dsc);
 
-    // // Draw battery
-    // draw_battery(canvas, state);
+    // Draw battery
+    draw_battery(canvas, state);
 
-    // // Draw output status
-    // lv_canvas_draw_text(canvas, 0, 0, CANVAS_SIZE, &label_dsc,
-    //                     state.connected ? LV_SYMBOL_WIFI : LV_SYMBOL_CLOSE);
+    // Draw output status
+    lv_canvas_draw_text(canvas, 0, 0, CANVAS_SIZE, &label_dsc,
+                        state.connected ? LV_SYMBOL_WIFI : LV_SYMBOL_CLOSE);
 
     // // Rotate canvas
-    // rotate_canvas(canvas, cbuf);
+    rotate_canvas(canvas, cbuf);
 }
 
 static void set_battery_status(struct zmk_widget_status *widget,
@@ -507,11 +507,11 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
     lv_obj_set_size(widget->obj, 160, 68);
     lv_obj_t *top = lv_canvas_create(widget->obj);
     lv_obj_align(top, LV_ALIGN_TOP_RIGHT, 0, 0);
-    lv_canvas_set_buffer(top, widget->cbuf, BATTERY_HEIGHT, DISP_WIDTH, LV_IMG_CF_TRUE_COLOR);
+    lv_canvas_set_buffer(top, widget->cbuf, 168, 20, LV_IMG_CF_TRUE_COLOR);
 
     // Params
     int anim_len = 78;
-    int per_frame_time_in_ms = 30;
+    int per_frame_time_in_ms = 2000;
     images = rocket_rush_images;
 
     // Init animations
@@ -522,7 +522,7 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
     lv_anim_set_values(&widget->anim, 0, anim_len-1);
     lv_anim_set_exec_cb(&widget->anim, (lv_anim_exec_xcb_t)set_img_src);
     lv_anim_set_repeat_count(&widget->anim, LV_ANIM_REPEAT_INFINITE);
-    lv_anim_set_repeat_delay(&widget->anim, 100);
+    lv_anim_set_repeat_delay(&widget->anim, 10000);
     lv_anim_start(&widget->anim);
 
     sys_slist_append(&widgets, &widget->node);
