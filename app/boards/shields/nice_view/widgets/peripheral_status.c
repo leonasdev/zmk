@@ -293,14 +293,14 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
 
     // Params
     int anim_len = 50;
-    float per_frame_time = 0.03f;
+    int per_frame_time_in_ms = 30;
     images = rocket_jump_images;
 
     // Init animations
     LOG_DBG("Setting animation!");
     lv_anim_init(&widget->anim);
     lv_anim_set_var(&widget->anim, widget->obj);
-    lv_anim_set_time(&widget->anim, (int)(anim_len*per_frame_time));
+    lv_anim_set_time(&widget->anim, anim_len*per_frame_time_in_ms);
     lv_anim_set_values(&widget->anim, 0, anim_len-1);
     lv_anim_set_exec_cb(&widget->anim, (lv_anim_exec_xcb_t)set_img_src);
     lv_anim_set_repeat_count(&widget->anim, LV_ANIM_REPEAT_INFINITE);
