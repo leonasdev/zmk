@@ -413,11 +413,16 @@ const void *rocket_rush_images[] = {
 
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
 
+void set_img_src(void *var, int32_t val) {
+    lv_obj_t *img = (lv_obj_t *)var;
+    lv_img_set_src(img, images[val]);
+}
+
 struct peripheral_status_state {
     bool connected;
-}currentState;
+};
 
-static void draw_top(lv_obj_t *widget) {
+static void draw_top(lv_obj_t *widget, lv_color_t cbuf[], struct status_state state) {
     lv_obj_t *canvas = lv_obj_get_child(widget, 0);
 
     lv_draw_label_dsc_t label_dsc;
@@ -429,20 +434,25 @@ static void draw_top(lv_obj_t *widget) {
     lv_canvas_draw_rect(canvas, 0, 0, CANVAS_SIZE, CANVAS_SIZE, &rect_black_dsc);
 
     // Draw battery
-    draw_battery(canvas, currentState);
+    draw_battery(canvas, state);
 
     // Draw output status
     lv_canvas_draw_text(canvas, 0, 0, CANVAS_SIZE, &label_dsc,
-                        currentState.connected ? LV_SYMBOL_WIFI : LV_SYMBOL_CLOSE);
+                        state.connected ? LV_SYMBOL_WIFI : LV_SYMBOL_CLOSE);
+
+    // Rotate canvas
+    rotate_canvas(canvas, cbuf);
 }
 
 static void set_battery_status(struct zmk_widget_status *widget,
                                struct battery_status_state state) {
 #if IS_ENABLED(CONFIG_USB_DEVICE_STACK)
-    currentState.charging = state.usb_present;
+    widget->state.charging = state.usb_present;
 #endif /* IS_ENABLED(CONFIG_USB_DEVICE_STACK) */
 
-    currentState.battery = state.level;
+    widget->state.battery = state.level;
+
+    draw_top(widget->obj, widget->cbuf, widget->state);
 }
 
 static void battery_status_update_cb(struct battery_status_state state) {
@@ -473,7 +483,9 @@ static struct peripheral_status_state get_state(const zmk_event_t *_eh) {
 
 static void set_connection_status(struct zmk_widget_status *widget,
                                   struct peripheral_status_state state) {
-    currentState.connected = state.connected;
+    widget->state.connected = state.connected;
+
+    draw_top(widget->obj, widget->cbuf, widget->state);
 }
 
 static void output_status_update_cb(struct peripheral_status_state state) {
@@ -484,12 +496,6 @@ static void output_status_update_cb(struct peripheral_status_state state) {
 ZMK_DISPLAY_WIDGET_LISTENER(widget_peripheral_status, struct peripheral_status_state,
                             output_status_update_cb, get_state)
 ZMK_SUBSCRIPTION(widget_peripheral_status, zmk_split_peripheral_status_changed);
-
-void set_img_src(void *var, int32_t val) {
-    lv_obj_t *img = (lv_obj_t *)var;
-    lv_img_set_src(img, images[val]);
-    draw_top(img);
-}
 
 int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
     widget->obj = lv_img_create(parent);
