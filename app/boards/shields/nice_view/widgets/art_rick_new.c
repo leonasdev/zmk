@@ -22,7 +22,7 @@
 #endif
 
 
-const uint8_t imgCount_rick = 5;
+extern uint8_t imgCount_rick = 5;
 
 const uint8_t color_0[5][4]={
  {0xee,0xee,0xee,0xff},
