@@ -745,7 +745,7 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
     // Params
     int anim_len = 229;
     int per_frame_time_in_ms = 40;
-    images = countdown_images;
+    // images = countdown_images;
 
     // Init animations
     LOG_DBG("Setting animation!");
