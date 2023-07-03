@@ -898,7 +898,7 @@ void set_img_src(void *var, int32_t val) {
     lv_obj_t *img = (lv_obj_t *)var;
 
     lv_img_set_src(img, rick_images[val]);
-    LOG_DBG(imgCount_rick);
+    uint8_t tmp = imgCount_rick;
 }
 
 int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
