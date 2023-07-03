@@ -743,7 +743,7 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
     lv_canvas_set_buffer(top, widget->cbuf, DISP_WIDTH, 20, LV_IMG_CF_TRUE_COLOR);
 
     // Params
-    int anim_len = 200;
+    int anim_len = 129;
     int per_frame_time_in_ms = 40;
     // images = countdown_images;
 
