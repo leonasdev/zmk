@@ -899,7 +899,7 @@ void set_img_src(void *var, int32_t val) {
     lv_img_set_src(img, rick_images[val]);
 }
 
-const uint8_t tmpTest = imgCount_rick;
+const uint8_t tmpTest = color_0[0][0];
 
 int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
     widget->obj = lv_img_create(parent);
