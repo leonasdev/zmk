@@ -21,6 +21,7 @@ LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 #include <zmk/events/split_peripheral_status_changed.h>
 #include <zmk/usb.h>
 #include <zmk/ble.h>
+#include "art_rick_new.h"
 
 // LV_IMG_DECLARE(cat_00)
 // LV_IMG_DECLARE(cat_01)
@@ -897,9 +898,8 @@ void set_img_src(void *var, int32_t val) {
     lv_obj_t *img = (lv_obj_t *)var;
 
     lv_img_set_src(img, rick_images[val]);
+    LOG_DBG(imgCount_rick);
 }
-
-const uint8_t tmpTest = color_0[0][0];
 
 int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
     widget->obj = lv_img_create(parent);
