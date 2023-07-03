@@ -444,7 +444,6 @@ static void set_battery_status(struct zmk_widget_status *widget,
 #if IS_ENABLED(CONFIG_USB_DEVICE_STACK)
     widget->state.charging = state.usb_present;
 #endif /* IS_ENABLED(CONFIG_USB_DEVICE_STACK) */
-
     widget->state.battery = state.level;
 
     draw_top(widget->obj, widget->cbuf, widget->state);
@@ -507,9 +506,9 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
     lv_canvas_set_buffer(top, widget->cbuf, DISP_WIDTH, 20, LV_IMG_CF_TRUE_COLOR);
 
     // Params
-    int anim_len = 78;
+    int anim_len = 238;
     int per_frame_time_in_ms = 30;
-    images = rocket_rush_images;
+    images = countdown_images;
 
     // Init animations
     LOG_DBG("Setting animation!");
