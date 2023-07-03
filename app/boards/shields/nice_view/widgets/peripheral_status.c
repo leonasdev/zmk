@@ -737,7 +737,7 @@ void set_img_src(void *var, int32_t val) {
     } else if (val < 200) {
         lv_img_set_src(img, countdown_images_2[val - 100]);
     } else {
-        lv_img_set_src(img, countdown_images_2[val - 200]);
+        lv_img_set_src(img, countdown_images_3[val - 200]);
     }
 
 }
