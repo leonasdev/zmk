@@ -326,86 +326,86 @@ LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 // const void *dance_images[] = {
 // &dance_000, &dance_001, &dance_002, &dance_003, &dance_004, &dance_005, &dance_006, &dance_007, &dance_008, &dance_009, &dance_010, &dance_011, &dance_012, &dance_013, &dance_014, &dance_015, &dance_016, &dance_017, &dance_018, &dance_019, &dance_020, &dance_021, &dance_022, &dance_023, &dance_024, &dance_025, &dance_026, &dance_027, &dance_028, &dance_029, &dance_030, &dance_031, &dance_032, &dance_033, &dance_034, &dance_035, &dance_036, &dance_037, &dance_038, &dance_039, &dance_040, &dance_041, &dance_042, &dance_043, &dance_044, &dance_045};
 
-// LV_IMG_DECLARE(rocket_rush_000)
-// LV_IMG_DECLARE(rocket_rush_001)
-// LV_IMG_DECLARE(rocket_rush_002)
-// LV_IMG_DECLARE(rocket_rush_003)
-// LV_IMG_DECLARE(rocket_rush_004)
-// LV_IMG_DECLARE(rocket_rush_005)
-// LV_IMG_DECLARE(rocket_rush_006)
-// LV_IMG_DECLARE(rocket_rush_007)
-// LV_IMG_DECLARE(rocket_rush_008)
-// LV_IMG_DECLARE(rocket_rush_009)
-// LV_IMG_DECLARE(rocket_rush_010)
-// LV_IMG_DECLARE(rocket_rush_011)
-// LV_IMG_DECLARE(rocket_rush_012)
-// LV_IMG_DECLARE(rocket_rush_013)
-// LV_IMG_DECLARE(rocket_rush_014)
-// LV_IMG_DECLARE(rocket_rush_015)
-// LV_IMG_DECLARE(rocket_rush_016)
-// LV_IMG_DECLARE(rocket_rush_017)
-// LV_IMG_DECLARE(rocket_rush_018)
-// LV_IMG_DECLARE(rocket_rush_019)
-// LV_IMG_DECLARE(rocket_rush_020)
-// LV_IMG_DECLARE(rocket_rush_021)
-// LV_IMG_DECLARE(rocket_rush_022)
-// LV_IMG_DECLARE(rocket_rush_023)
-// LV_IMG_DECLARE(rocket_rush_024)
-// LV_IMG_DECLARE(rocket_rush_025)
-// LV_IMG_DECLARE(rocket_rush_026)
-// LV_IMG_DECLARE(rocket_rush_027)
-// LV_IMG_DECLARE(rocket_rush_028)
-// LV_IMG_DECLARE(rocket_rush_029)
-// LV_IMG_DECLARE(rocket_rush_030)
-// LV_IMG_DECLARE(rocket_rush_031)
-// LV_IMG_DECLARE(rocket_rush_032)
-// LV_IMG_DECLARE(rocket_rush_033)
-// LV_IMG_DECLARE(rocket_rush_034)
-// LV_IMG_DECLARE(rocket_rush_035)
-// LV_IMG_DECLARE(rocket_rush_036)
-// LV_IMG_DECLARE(rocket_rush_037)
-// LV_IMG_DECLARE(rocket_rush_038)
-// LV_IMG_DECLARE(rocket_rush_039)
-// LV_IMG_DECLARE(rocket_rush_040)
-// LV_IMG_DECLARE(rocket_rush_041)
-// LV_IMG_DECLARE(rocket_rush_042)
-// LV_IMG_DECLARE(rocket_rush_043)
-// LV_IMG_DECLARE(rocket_rush_044)
-// LV_IMG_DECLARE(rocket_rush_045)
-// LV_IMG_DECLARE(rocket_rush_046)
-// LV_IMG_DECLARE(rocket_rush_047)
-// LV_IMG_DECLARE(rocket_rush_048)
-// LV_IMG_DECLARE(rocket_rush_049)
-// LV_IMG_DECLARE(rocket_rush_050)
-// LV_IMG_DECLARE(rocket_rush_051)
-// LV_IMG_DECLARE(rocket_rush_052)
-// LV_IMG_DECLARE(rocket_rush_053)
-// LV_IMG_DECLARE(rocket_rush_054)
-// LV_IMG_DECLARE(rocket_rush_055)
-// LV_IMG_DECLARE(rocket_rush_056)
-// LV_IMG_DECLARE(rocket_rush_057)
-// LV_IMG_DECLARE(rocket_rush_058)
-// LV_IMG_DECLARE(rocket_rush_059)
-// LV_IMG_DECLARE(rocket_rush_060)
-// LV_IMG_DECLARE(rocket_rush_061)
-// LV_IMG_DECLARE(rocket_rush_062)
-// LV_IMG_DECLARE(rocket_rush_063)
-// LV_IMG_DECLARE(rocket_rush_064)
-// LV_IMG_DECLARE(rocket_rush_065)
-// LV_IMG_DECLARE(rocket_rush_066)
-// LV_IMG_DECLARE(rocket_rush_067)
-// LV_IMG_DECLARE(rocket_rush_068)
-// LV_IMG_DECLARE(rocket_rush_069)
-// LV_IMG_DECLARE(rocket_rush_070)
-// LV_IMG_DECLARE(rocket_rush_071)
-// LV_IMG_DECLARE(rocket_rush_072)
-// LV_IMG_DECLARE(rocket_rush_073)
-// LV_IMG_DECLARE(rocket_rush_074)
-// LV_IMG_DECLARE(rocket_rush_075)
-// LV_IMG_DECLARE(rocket_rush_076)
-// LV_IMG_DECLARE(rocket_rush_077)
-// const void *rocket_rush_images[] = {
-// &rocket_rush_000, &rocket_rush_001, &rocket_rush_002, &rocket_rush_003, &rocket_rush_004, &rocket_rush_005, &rocket_rush_006, &rocket_rush_007, &rocket_rush_008, &rocket_rush_009, &rocket_rush_010, &rocket_rush_011, &rocket_rush_012, &rocket_rush_013, &rocket_rush_014, &rocket_rush_015, &rocket_rush_016, &rocket_rush_017, &rocket_rush_018, &rocket_rush_019, &rocket_rush_020, &rocket_rush_021, &rocket_rush_022, &rocket_rush_023, &rocket_rush_024, &rocket_rush_025, &rocket_rush_026, &rocket_rush_027, &rocket_rush_028, &rocket_rush_029, &rocket_rush_030, &rocket_rush_031, &rocket_rush_032, &rocket_rush_033, &rocket_rush_034, &rocket_rush_035, &rocket_rush_036, &rocket_rush_037, &rocket_rush_038, &rocket_rush_039, &rocket_rush_040, &rocket_rush_041, &rocket_rush_042, &rocket_rush_043, &rocket_rush_044, &rocket_rush_045, &rocket_rush_046, &rocket_rush_047, &rocket_rush_048, &rocket_rush_049, &rocket_rush_050, &rocket_rush_051, &rocket_rush_052, &rocket_rush_053, &rocket_rush_054, &rocket_rush_055, &rocket_rush_056, &rocket_rush_057, &rocket_rush_058, &rocket_rush_059, &rocket_rush_060, &rocket_rush_061, &rocket_rush_062, &rocket_rush_063, &rocket_rush_064, &rocket_rush_065, &rocket_rush_066, &rocket_rush_067, &rocket_rush_068, &rocket_rush_069, &rocket_rush_070, &rocket_rush_071, &rocket_rush_072, &rocket_rush_073, &rocket_rush_074, &rocket_rush_075, &rocket_rush_076, &rocket_rush_077};
+LV_IMG_DECLARE(rocket_rush_000)
+LV_IMG_DECLARE(rocket_rush_001)
+LV_IMG_DECLARE(rocket_rush_002)
+LV_IMG_DECLARE(rocket_rush_003)
+LV_IMG_DECLARE(rocket_rush_004)
+LV_IMG_DECLARE(rocket_rush_005)
+LV_IMG_DECLARE(rocket_rush_006)
+LV_IMG_DECLARE(rocket_rush_007)
+LV_IMG_DECLARE(rocket_rush_008)
+LV_IMG_DECLARE(rocket_rush_009)
+LV_IMG_DECLARE(rocket_rush_010)
+LV_IMG_DECLARE(rocket_rush_011)
+LV_IMG_DECLARE(rocket_rush_012)
+LV_IMG_DECLARE(rocket_rush_013)
+LV_IMG_DECLARE(rocket_rush_014)
+LV_IMG_DECLARE(rocket_rush_015)
+LV_IMG_DECLARE(rocket_rush_016)
+LV_IMG_DECLARE(rocket_rush_017)
+LV_IMG_DECLARE(rocket_rush_018)
+LV_IMG_DECLARE(rocket_rush_019)
+LV_IMG_DECLARE(rocket_rush_020)
+LV_IMG_DECLARE(rocket_rush_021)
+LV_IMG_DECLARE(rocket_rush_022)
+LV_IMG_DECLARE(rocket_rush_023)
+LV_IMG_DECLARE(rocket_rush_024)
+LV_IMG_DECLARE(rocket_rush_025)
+LV_IMG_DECLARE(rocket_rush_026)
+LV_IMG_DECLARE(rocket_rush_027)
+LV_IMG_DECLARE(rocket_rush_028)
+LV_IMG_DECLARE(rocket_rush_029)
+LV_IMG_DECLARE(rocket_rush_030)
+LV_IMG_DECLARE(rocket_rush_031)
+LV_IMG_DECLARE(rocket_rush_032)
+LV_IMG_DECLARE(rocket_rush_033)
+LV_IMG_DECLARE(rocket_rush_034)
+LV_IMG_DECLARE(rocket_rush_035)
+LV_IMG_DECLARE(rocket_rush_036)
+LV_IMG_DECLARE(rocket_rush_037)
+LV_IMG_DECLARE(rocket_rush_038)
+LV_IMG_DECLARE(rocket_rush_039)
+LV_IMG_DECLARE(rocket_rush_040)
+LV_IMG_DECLARE(rocket_rush_041)
+LV_IMG_DECLARE(rocket_rush_042)
+LV_IMG_DECLARE(rocket_rush_043)
+LV_IMG_DECLARE(rocket_rush_044)
+LV_IMG_DECLARE(rocket_rush_045)
+LV_IMG_DECLARE(rocket_rush_046)
+LV_IMG_DECLARE(rocket_rush_047)
+LV_IMG_DECLARE(rocket_rush_048)
+LV_IMG_DECLARE(rocket_rush_049)
+LV_IMG_DECLARE(rocket_rush_050)
+LV_IMG_DECLARE(rocket_rush_051)
+LV_IMG_DECLARE(rocket_rush_052)
+LV_IMG_DECLARE(rocket_rush_053)
+LV_IMG_DECLARE(rocket_rush_054)
+LV_IMG_DECLARE(rocket_rush_055)
+LV_IMG_DECLARE(rocket_rush_056)
+LV_IMG_DECLARE(rocket_rush_057)
+LV_IMG_DECLARE(rocket_rush_058)
+LV_IMG_DECLARE(rocket_rush_059)
+LV_IMG_DECLARE(rocket_rush_060)
+LV_IMG_DECLARE(rocket_rush_061)
+LV_IMG_DECLARE(rocket_rush_062)
+LV_IMG_DECLARE(rocket_rush_063)
+LV_IMG_DECLARE(rocket_rush_064)
+LV_IMG_DECLARE(rocket_rush_065)
+LV_IMG_DECLARE(rocket_rush_066)
+LV_IMG_DECLARE(rocket_rush_067)
+LV_IMG_DECLARE(rocket_rush_068)
+LV_IMG_DECLARE(rocket_rush_069)
+LV_IMG_DECLARE(rocket_rush_070)
+LV_IMG_DECLARE(rocket_rush_071)
+LV_IMG_DECLARE(rocket_rush_072)
+LV_IMG_DECLARE(rocket_rush_073)
+LV_IMG_DECLARE(rocket_rush_074)
+LV_IMG_DECLARE(rocket_rush_075)
+LV_IMG_DECLARE(rocket_rush_076)
+LV_IMG_DECLARE(rocket_rush_077)
+const void *rocket_rush_images[] = {
+&rocket_rush_000, &rocket_rush_001, &rocket_rush_002, &rocket_rush_003, &rocket_rush_004, &rocket_rush_005, &rocket_rush_006, &rocket_rush_007, &rocket_rush_008, &rocket_rush_009, &rocket_rush_010, &rocket_rush_011, &rocket_rush_012, &rocket_rush_013, &rocket_rush_014, &rocket_rush_015, &rocket_rush_016, &rocket_rush_017, &rocket_rush_018, &rocket_rush_019, &rocket_rush_020, &rocket_rush_021, &rocket_rush_022, &rocket_rush_023, &rocket_rush_024, &rocket_rush_025, &rocket_rush_026, &rocket_rush_027, &rocket_rush_028, &rocket_rush_029, &rocket_rush_030, &rocket_rush_031, &rocket_rush_032, &rocket_rush_033, &rocket_rush_034, &rocket_rush_035, &rocket_rush_036, &rocket_rush_037, &rocket_rush_038, &rocket_rush_039, &rocket_rush_040, &rocket_rush_041, &rocket_rush_042, &rocket_rush_043, &rocket_rush_044, &rocket_rush_045, &rocket_rush_046, &rocket_rush_047, &rocket_rush_048, &rocket_rush_049, &rocket_rush_050, &rocket_rush_051, &rocket_rush_052, &rocket_rush_053, &rocket_rush_054, &rocket_rush_055, &rocket_rush_056, &rocket_rush_057, &rocket_rush_058, &rocket_rush_059, &rocket_rush_060, &rocket_rush_061, &rocket_rush_062, &rocket_rush_063, &rocket_rush_064, &rocket_rush_065, &rocket_rush_066, &rocket_rush_067, &rocket_rush_068, &rocket_rush_069, &rocket_rush_070, &rocket_rush_071, &rocket_rush_072, &rocket_rush_073, &rocket_rush_074, &rocket_rush_075, &rocket_rush_076, &rocket_rush_077};
 
 LV_IMG_DECLARE(countdown_000)
 LV_IMG_DECLARE(countdown_001)
@@ -892,19 +892,18 @@ ZMK_SUBSCRIPTION(widget_peripheral_status, zmk_split_peripheral_status_changed);
 const void **images;
 uint8_t images_len;
 
+const long long int idx = 0;
 void set_img_src(void *var, int32_t val) {
     lv_obj_t *img = (lv_obj_t *)var;
 
-    lv_img_set_src(img, rick_images[val]);
-
-    // if (val < 100) {
-    //     lv_img_set_src(img, countdown_images_1[val]);
-    // } else if (val < 200) {
-    //     lv_img_set_src(img, countdown_images_2[val - 100]);
-    // } else {
-    //     lv_img_set_src(img, countdown_images_3[val - 200]);
-    // }
-
+    if(idx < 159)
+    { 
+        lv_img_set_src(img, rick_images[idx++]);
+    }
+    else
+    {
+        lv_img_set_src(img, rick_images[(idx++ - 159 ) % 78]);
+    }
 }
 
 int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
@@ -916,7 +915,7 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
     lv_canvas_set_buffer(top, widget->cbuf, DISP_WIDTH, 20, LV_IMG_CF_TRUE_COLOR);
 
     // Params
-    int anim_len = 159;
+    int anim_len = 100;
     int per_frame_time_in_ms = 40;
     // images = countdown_images;
 
