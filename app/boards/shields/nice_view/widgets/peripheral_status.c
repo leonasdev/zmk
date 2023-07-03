@@ -892,7 +892,7 @@ ZMK_SUBSCRIPTION(widget_peripheral_status, zmk_split_peripheral_status_changed);
 const void **images;
 uint8_t images_len;
 
-const long long int idx = 0;
+long long int idx = 0;
 void set_img_src(void *var, int32_t val) {
     lv_obj_t *img = (lv_obj_t *)var;
 
