@@ -19,7 +19,6 @@
 #ifndef LV_ATTRIBUTE_IMG_RICK_004
 #define LV_ATTRIBUTE_IMG_RICK_004
 #endif
-}
 
 const uint8_t imgCount_rick = 5;
 
