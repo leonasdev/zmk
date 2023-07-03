@@ -902,7 +902,7 @@ void set_img_src(void *var, int32_t val) {
     }
     else
     {
-        lv_img_set_src(img, rick_images[(idx++ - 159 ) % 78]);
+        lv_img_set_src(img, rocket_rush_images[(idx++ - 159 ) % 78]);
     }
 }
 
@@ -915,7 +915,7 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
     lv_canvas_set_buffer(top, widget->cbuf, DISP_WIDTH, 20, LV_IMG_CF_TRUE_COLOR);
 
     // Params
-    int anim_len = 100;
+    int anim_len = 159;
     int per_frame_time_in_ms = 40;
     // images = countdown_images;
 
