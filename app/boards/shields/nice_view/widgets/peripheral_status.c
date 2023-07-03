@@ -732,11 +732,14 @@ uint8_t images_len;
 void set_img_src(void *var, int32_t val) {
     lv_obj_t *img = (lv_obj_t *)var;
 
-    // if (val < 200) {
+    if (val < 100) {
         lv_img_set_src(img, countdown_images_1[val]);
-    // } else {
-    //     lv_img_set_src(img, countdown_images_2[val - 200]);
-    // }
+    } else if (val < 200) {
+        lv_img_set_src(img, countdown_images_2[val - 100]);
+    } else {
+        lv_img_set_src(img, countdown_images_2[val - 200]);
+    }
+
 }
 
 int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
