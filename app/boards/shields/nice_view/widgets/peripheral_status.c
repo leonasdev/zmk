@@ -47,9 +47,6 @@ LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 // LV_IMG_DECLARE(cat_22)
 // LV_IMG_DECLARE(cat_23)
 
-// const void **images;
-// uint8_t images_len;
-
 // const void *cat_roll_images[] = {
 //     &cat_00, &cat_01, &cat_02, &cat_03, &cat_04, &cat_05, &cat_06, &cat_07, &cat_08, &cat_09, &cat_10, &cat_11, &cat_12, &cat_13, &cat_14, &cat_15, &cat_16, &cat_17, &cat_18, &cat_19, &cat_20, &cat_21, &cat_22, &cat_23
 // };
@@ -725,7 +722,9 @@ ZMK_DISPLAY_WIDGET_LISTENER(widget_peripheral_status, struct peripheral_status_s
                             output_status_update_cb, get_state)
 ZMK_SUBSCRIPTION(widget_peripheral_status, zmk_split_peripheral_status_changed);
 
-struct zmk_widget_status *widgetRef;
+const void **images;
+uint8_t images_len;
+
 void set_img_src(void *var, int32_t val) {
     lv_obj_t *img = (lv_obj_t *)var;
     lv_img_set_src(img, images[val]);
@@ -759,8 +758,6 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
 
     widget_battery_status_init();
     widget_peripheral_status_init();
-
-    widgetRef=widget;
 
     return 0;
 }
