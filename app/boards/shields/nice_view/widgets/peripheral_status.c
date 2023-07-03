@@ -899,6 +899,8 @@ void set_img_src(void *var, int32_t val) {
     lv_img_set_src(img, rick_images[val]);
 }
 
+const uint8_t tmpTest = imgCount_rick;
+
 int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
     widget->obj = lv_img_create(parent);
     
@@ -914,7 +916,6 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
 
     // Init animations
     LOG_DBG("Setting animation!");
-    uint8_t tmpTest = imgCount_rick;
 
     lv_anim_init(&widget->anim);
     lv_anim_set_var(&widget->anim, widget->obj);
