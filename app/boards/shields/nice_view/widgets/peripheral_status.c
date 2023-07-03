@@ -898,11 +898,11 @@ void set_img_src(void *var, int32_t val) {
 
     if(idx < 1000)
     { 
-        lv_img_set_src(img, rick_images[val++]);
+        lv_img_set_src(img, rick_images[val]);
     }
     else
     {
-        lv_img_set_src(img, rocket_rush_images[(val++ - 159 ) % 78]);
+        lv_img_set_src(img, rocket_rush_images[(val - 159 ) % 78]);
     }
 }
 
