@@ -914,6 +914,8 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
 
     // Init animations
     LOG_DBG("Setting animation!");
+    uint8 tmpTest = imgCount_rick;
+
     lv_anim_init(&widget->anim);
     lv_anim_set_var(&widget->anim, widget->obj);
     lv_anim_set_time(&widget->anim, anim_len*per_frame_time_in_ms);
