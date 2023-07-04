@@ -1,4 +1,9 @@
 #include <lvgl.h>
+#include <stdio.h>
+#include <stdint.h>
+
+#include <zephyr/logging/log.h>
+LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 
 #ifndef LV_ATTRIBUTE_MEM_ALIGN
 #define LV_ATTRIBUTE_MEM_ALIGN
@@ -31,6 +36,31 @@ uint8_t *imgData[2]={
 
 long rleLengths[2]={543, 536};
 
+char* arrayToHexString(const uint8_t *array, size_t length) {
+    size_t hexStringLength = length * 2 + (length - 1) + 1; // Calculate the required length of the hex string
+    char* hexString = malloc(hexStringLength * sizeof(char)); // Allocate memory for the hex string
+
+    if (hexString == NULL) {
+        return NULL; // Memory allocation failed
+    }
+
+    size_t index = 0;
+
+    for (size_t i = 0; i < length; i++) {
+        index += sprintf(&hexString[index], "%02X", array[i]);
+
+        // Add a comma if not the last element
+        if (i != length - 1) {
+            hexString[index++] = ',';
+        }
+    }
+
+    // Null-terminate the string
+    hexString[index] = '\0';
+
+    return hexString;
+}
+
 void ExpandRLEArray(uint8_t idx, uint8_t expandedArray[]) {
     uint8_t *rleArray = imgData[idx];
     uint8_t rleLength = rleLengths[idx];
@@ -51,7 +81,10 @@ void ExpandRLEArray(uint8_t idx, uint8_t expandedArray[]) {
             expandedArray[expandedIndex++] = value;
         }
     }
+    LOG_DBG("Logging img data %i", idx);
+    LOG_DBG(arrayToHexString(expandedArray), 1240);
 }
+
 LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_RICK_000 uint8_t rick_000_map[1240] = {0};
 lv_img_dsc_t rick_000;
 
