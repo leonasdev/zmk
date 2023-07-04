@@ -46,6 +46,17 @@ const uint8_t *imgData[2]={
 //     }
 // }
 
+LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_RICK_000 uint8_t rick_000_map[1240] = {0};
+lv_img_dsc_t rick_000 = {
+        .header.cf = LV_IMG_CF_INDEXED_1BIT,
+        .header.always_zero = 0,
+        .header.reserved = 0,
+        .header.w = 140,
+        .header.h = 68,
+        .data_size = 1232,
+        .data = rick_000_map,
+        };
+
 LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_RICK_001 uint8_t rick_001_map[1240] = {0};
 lv_img_dsc_t rick_001 = {
         .header.cf = LV_IMG_CF_INDEXED_1BIT,
@@ -55,16 +66,5 @@ lv_img_dsc_t rick_001 = {
         .header.h = 68,
         .data_size = 1232,
         .data = rick_001_map,
-        };
-
-LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_RICK_002 uint8_t rick_002_map[1240] = {0};
-lv_img_dsc_t rick_002 = {
-        .header.cf = LV_IMG_CF_INDEXED_1BIT,
-        .header.always_zero = 0,
-        .header.reserved = 0,
-        .header.w = 140,
-        .header.h = 68,
-        .data_size = 1232,
-        .data = rick_002_map,
         };
 
