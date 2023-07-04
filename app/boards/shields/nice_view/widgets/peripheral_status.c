@@ -899,8 +899,8 @@ long long int idx = 0;
 void set_img_src(void *var, int32_t val) {
     lv_obj_t *img = (lv_obj_t *)var;
 
-    lv_img_set_src(img, rocket_rush_images[val]);
-    initialize_rick_images();
+    lv_img_set_src(img, rick_images[val]);
+    // initialize_rick_images();
 }
 
 int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
@@ -912,9 +912,11 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
     lv_canvas_set_buffer(top, widget->cbuf, DISP_WIDTH, 20, LV_IMG_CF_TRUE_COLOR);
 
     // Params
-    int anim_len = 78;
+    int anim_len = 2;
     int per_frame_time_in_ms = 10000;
     // images = countdown_images;
+
+    initialize_rick_images();
 
     // Init animations
     LOG_DBG("Setting animation!");
