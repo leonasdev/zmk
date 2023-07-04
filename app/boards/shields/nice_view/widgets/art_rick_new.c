@@ -66,25 +66,21 @@ void initialize_rick_images(){
    ExpandRLEArray(0, rick_000_map);
    ExpandRLEArray(1, rick_001_map);
 
-   rick_000 = {
-        .header.cf = LV_IMG_CF_INDEXED_1BIT,
-        .header.always_zero = 0,
-        .header.reserved = 0,
-        .header.w = 140,
-        .header.h = 68,
-        .data_size = 1232,
-        .data = rick_000_map,
-        };
+    rick_000.header.cf = LV_IMG_CF_INDEXED_1BIT;
+    rick_000.header.always_zero = 0;
+    rick_000.header.reserved = 0;
+    rick_000.header.w = 140;
+    rick_000.header.h = 68;
+    rick_000.data_size = 1232;
+    rick_000.data = rick_000_map;
 
-   rick_001 = {
-        .header.cf = LV_IMG_CF_INDEXED_1BIT,
-        .header.always_zero = 0,
-        .header.reserved = 0,
-        .header.w = 140,
-        .header.h = 68,
-        .data_size = 1232,
-        .data = rick_001_map,
-        };
+    rick_001.header.cf = LV_IMG_CF_INDEXED_1BIT;
+    rick_001.header.always_zero = 0;
+    rick_001.header.reserved = 0;
+    rick_001.header.w = 140;
+    rick_001.header.h = 68;
+    rick_001.data_size = 1232;
+    rick_001.data = rick_001_map;
 
 
 }
