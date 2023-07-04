@@ -83,7 +83,7 @@ void ExpandRLEArray(uint8_t idx, uint8_t expandedArray[]) {
         }
     }
     LOG_DBG("Logging img data %i", idx);
-    LOG_DBG(arrayToHexString(expandedArray), 1240);
+    LOG_DBG(arrayToHexString(expandedArray, 1240));
 }
 
 LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_RICK_000 uint8_t rick_000_map[1240] = {0};
