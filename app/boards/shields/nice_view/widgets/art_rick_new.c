@@ -39,7 +39,7 @@ long rleLengths[2]={543, 536};
 
 char* arrayToHexString(const uint8_t *array, size_t length) {
     size_t hexStringLength = length * 2 + (length - 1) + 1; // Calculate the required length of the hex string
-    char* hexString = malloc(hexStringLength * sizeof(char)); // Allocate memory for the hex string
+    char* hexString = (char*) malloc(hexStringLength * sizeof(char)); // Allocate memory for the hex string
 
     if (hexString == NULL) {
         return NULL; // Memory allocation failed
@@ -70,8 +70,8 @@ void ExpandRLEArray(uint8_t idx, uint8_t expandedArray[]) {
     int expandedIndex = 0;
 
     for(int i = 0; i < 4; i++){
-        expandedArray[i] = color_0[i];
-        expandedArray[i + 4] = color_1[i];
+        expandedArray[i] = color_0[idx][i];
+        expandedArray[i + 4] = color_1[idx][i];
     }
 
     while (index < rleLength) {
