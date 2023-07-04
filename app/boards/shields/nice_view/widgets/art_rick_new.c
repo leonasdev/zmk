@@ -1634,7 +1634,6 @@ void initialize_rick_images(){
    ExpandRLEArray(157, rick_157_map);
    ExpandRLEArray(158, rick_158_map);
 
-   rick_000 = 
     rick_000.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_000.header.always_zero = 0;
     rick_000.header.reserved = 0;
@@ -1643,7 +1642,6 @@ void initialize_rick_images(){
     rick_000.data_size = 1232;
     rick_000.data = rick_000_map;
 
-   rick_001 = 
     rick_001.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_001.header.always_zero = 0;
     rick_001.header.reserved = 0;
@@ -1652,7 +1650,6 @@ void initialize_rick_images(){
     rick_001.data_size = 1232;
     rick_001.data = rick_001_map;
 
-   rick_002 = 
     rick_002.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_002.header.always_zero = 0;
     rick_002.header.reserved = 0;
@@ -1661,7 +1658,6 @@ void initialize_rick_images(){
     rick_002.data_size = 1232;
     rick_002.data = rick_002_map;
 
-   rick_003 = 
     rick_003.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_003.header.always_zero = 0;
     rick_003.header.reserved = 0;
@@ -1670,7 +1666,6 @@ void initialize_rick_images(){
     rick_003.data_size = 1232;
     rick_003.data = rick_003_map;
 
-   rick_004 = 
     rick_004.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_004.header.always_zero = 0;
     rick_004.header.reserved = 0;
@@ -1679,7 +1674,6 @@ void initialize_rick_images(){
     rick_004.data_size = 1232;
     rick_004.data = rick_004_map;
 
-   rick_005 = 
     rick_005.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_005.header.always_zero = 0;
     rick_005.header.reserved = 0;
@@ -1688,7 +1682,6 @@ void initialize_rick_images(){
     rick_005.data_size = 1232;
     rick_005.data = rick_005_map;
 
-   rick_006 = 
     rick_006.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_006.header.always_zero = 0;
     rick_006.header.reserved = 0;
@@ -1697,7 +1690,6 @@ void initialize_rick_images(){
     rick_006.data_size = 1232;
     rick_006.data = rick_006_map;
 
-   rick_007 = 
     rick_007.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_007.header.always_zero = 0;
     rick_007.header.reserved = 0;
@@ -1706,7 +1698,6 @@ void initialize_rick_images(){
     rick_007.data_size = 1232;
     rick_007.data = rick_007_map;
 
-   rick_008 = 
     rick_008.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_008.header.always_zero = 0;
     rick_008.header.reserved = 0;
@@ -1715,7 +1706,6 @@ void initialize_rick_images(){
     rick_008.data_size = 1232;
     rick_008.data = rick_008_map;
 
-   rick_009 = 
     rick_009.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_009.header.always_zero = 0;
     rick_009.header.reserved = 0;
@@ -1724,7 +1714,6 @@ void initialize_rick_images(){
     rick_009.data_size = 1232;
     rick_009.data = rick_009_map;
 
-   rick_010 = 
     rick_010.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_010.header.always_zero = 0;
     rick_010.header.reserved = 0;
@@ -1733,7 +1722,6 @@ void initialize_rick_images(){
     rick_010.data_size = 1232;
     rick_010.data = rick_010_map;
 
-   rick_011 = 
     rick_011.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_011.header.always_zero = 0;
     rick_011.header.reserved = 0;
@@ -1742,7 +1730,6 @@ void initialize_rick_images(){
     rick_011.data_size = 1232;
     rick_011.data = rick_011_map;
 
-   rick_012 = 
     rick_012.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_012.header.always_zero = 0;
     rick_012.header.reserved = 0;
@@ -1751,7 +1738,6 @@ void initialize_rick_images(){
     rick_012.data_size = 1232;
     rick_012.data = rick_012_map;
 
-   rick_013 = 
     rick_013.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_013.header.always_zero = 0;
     rick_013.header.reserved = 0;
@@ -1760,7 +1746,6 @@ void initialize_rick_images(){
     rick_013.data_size = 1232;
     rick_013.data = rick_013_map;
 
-   rick_014 = 
     rick_014.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_014.header.always_zero = 0;
     rick_014.header.reserved = 0;
@@ -1769,7 +1754,6 @@ void initialize_rick_images(){
     rick_014.data_size = 1232;
     rick_014.data = rick_014_map;
 
-   rick_015 = 
     rick_015.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_015.header.always_zero = 0;
     rick_015.header.reserved = 0;
@@ -1778,7 +1762,6 @@ void initialize_rick_images(){
     rick_015.data_size = 1232;
     rick_015.data = rick_015_map;
 
-   rick_016 = 
     rick_016.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_016.header.always_zero = 0;
     rick_016.header.reserved = 0;
@@ -1787,7 +1770,6 @@ void initialize_rick_images(){
     rick_016.data_size = 1232;
     rick_016.data = rick_016_map;
 
-   rick_017 = 
     rick_017.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_017.header.always_zero = 0;
     rick_017.header.reserved = 0;
@@ -1796,7 +1778,6 @@ void initialize_rick_images(){
     rick_017.data_size = 1232;
     rick_017.data = rick_017_map;
 
-   rick_018 = 
     rick_018.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_018.header.always_zero = 0;
     rick_018.header.reserved = 0;
@@ -1805,7 +1786,6 @@ void initialize_rick_images(){
     rick_018.data_size = 1232;
     rick_018.data = rick_018_map;
 
-   rick_019 = 
     rick_019.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_019.header.always_zero = 0;
     rick_019.header.reserved = 0;
@@ -1814,7 +1794,6 @@ void initialize_rick_images(){
     rick_019.data_size = 1232;
     rick_019.data = rick_019_map;
 
-   rick_020 = 
     rick_020.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_020.header.always_zero = 0;
     rick_020.header.reserved = 0;
@@ -1823,7 +1802,6 @@ void initialize_rick_images(){
     rick_020.data_size = 1232;
     rick_020.data = rick_020_map;
 
-   rick_021 = 
     rick_021.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_021.header.always_zero = 0;
     rick_021.header.reserved = 0;
@@ -1832,7 +1810,6 @@ void initialize_rick_images(){
     rick_021.data_size = 1232;
     rick_021.data = rick_021_map;
 
-   rick_022 = 
     rick_022.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_022.header.always_zero = 0;
     rick_022.header.reserved = 0;
@@ -1841,7 +1818,6 @@ void initialize_rick_images(){
     rick_022.data_size = 1232;
     rick_022.data = rick_022_map;
 
-   rick_023 = 
     rick_023.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_023.header.always_zero = 0;
     rick_023.header.reserved = 0;
@@ -1850,7 +1826,6 @@ void initialize_rick_images(){
     rick_023.data_size = 1232;
     rick_023.data = rick_023_map;
 
-   rick_024 = 
     rick_024.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_024.header.always_zero = 0;
     rick_024.header.reserved = 0;
@@ -1859,7 +1834,6 @@ void initialize_rick_images(){
     rick_024.data_size = 1232;
     rick_024.data = rick_024_map;
 
-   rick_025 = 
     rick_025.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_025.header.always_zero = 0;
     rick_025.header.reserved = 0;
@@ -1868,7 +1842,6 @@ void initialize_rick_images(){
     rick_025.data_size = 1232;
     rick_025.data = rick_025_map;
 
-   rick_026 = 
     rick_026.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_026.header.always_zero = 0;
     rick_026.header.reserved = 0;
@@ -1877,7 +1850,6 @@ void initialize_rick_images(){
     rick_026.data_size = 1232;
     rick_026.data = rick_026_map;
 
-   rick_027 = 
     rick_027.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_027.header.always_zero = 0;
     rick_027.header.reserved = 0;
@@ -1886,7 +1858,6 @@ void initialize_rick_images(){
     rick_027.data_size = 1232;
     rick_027.data = rick_027_map;
 
-   rick_028 = 
     rick_028.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_028.header.always_zero = 0;
     rick_028.header.reserved = 0;
@@ -1895,7 +1866,6 @@ void initialize_rick_images(){
     rick_028.data_size = 1232;
     rick_028.data = rick_028_map;
 
-   rick_029 = 
     rick_029.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_029.header.always_zero = 0;
     rick_029.header.reserved = 0;
@@ -1904,7 +1874,6 @@ void initialize_rick_images(){
     rick_029.data_size = 1232;
     rick_029.data = rick_029_map;
 
-   rick_030 = 
     rick_030.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_030.header.always_zero = 0;
     rick_030.header.reserved = 0;
@@ -1913,7 +1882,6 @@ void initialize_rick_images(){
     rick_030.data_size = 1232;
     rick_030.data = rick_030_map;
 
-   rick_031 = 
     rick_031.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_031.header.always_zero = 0;
     rick_031.header.reserved = 0;
@@ -1922,7 +1890,6 @@ void initialize_rick_images(){
     rick_031.data_size = 1232;
     rick_031.data = rick_031_map;
 
-   rick_032 = 
     rick_032.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_032.header.always_zero = 0;
     rick_032.header.reserved = 0;
@@ -1931,7 +1898,6 @@ void initialize_rick_images(){
     rick_032.data_size = 1232;
     rick_032.data = rick_032_map;
 
-   rick_033 = 
     rick_033.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_033.header.always_zero = 0;
     rick_033.header.reserved = 0;
@@ -1940,7 +1906,6 @@ void initialize_rick_images(){
     rick_033.data_size = 1232;
     rick_033.data = rick_033_map;
 
-   rick_034 = 
     rick_034.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_034.header.always_zero = 0;
     rick_034.header.reserved = 0;
@@ -1949,7 +1914,6 @@ void initialize_rick_images(){
     rick_034.data_size = 1232;
     rick_034.data = rick_034_map;
 
-   rick_035 = 
     rick_035.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_035.header.always_zero = 0;
     rick_035.header.reserved = 0;
@@ -1958,7 +1922,6 @@ void initialize_rick_images(){
     rick_035.data_size = 1232;
     rick_035.data = rick_035_map;
 
-   rick_036 = 
     rick_036.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_036.header.always_zero = 0;
     rick_036.header.reserved = 0;
@@ -1967,7 +1930,6 @@ void initialize_rick_images(){
     rick_036.data_size = 1232;
     rick_036.data = rick_036_map;
 
-   rick_037 = 
     rick_037.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_037.header.always_zero = 0;
     rick_037.header.reserved = 0;
@@ -1976,7 +1938,6 @@ void initialize_rick_images(){
     rick_037.data_size = 1232;
     rick_037.data = rick_037_map;
 
-   rick_038 = 
     rick_038.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_038.header.always_zero = 0;
     rick_038.header.reserved = 0;
@@ -1985,7 +1946,6 @@ void initialize_rick_images(){
     rick_038.data_size = 1232;
     rick_038.data = rick_038_map;
 
-   rick_039 = 
     rick_039.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_039.header.always_zero = 0;
     rick_039.header.reserved = 0;
@@ -1994,7 +1954,6 @@ void initialize_rick_images(){
     rick_039.data_size = 1232;
     rick_039.data = rick_039_map;
 
-   rick_040 = 
     rick_040.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_040.header.always_zero = 0;
     rick_040.header.reserved = 0;
@@ -2003,7 +1962,6 @@ void initialize_rick_images(){
     rick_040.data_size = 1232;
     rick_040.data = rick_040_map;
 
-   rick_041 = 
     rick_041.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_041.header.always_zero = 0;
     rick_041.header.reserved = 0;
@@ -2012,7 +1970,6 @@ void initialize_rick_images(){
     rick_041.data_size = 1232;
     rick_041.data = rick_041_map;
 
-   rick_042 = 
     rick_042.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_042.header.always_zero = 0;
     rick_042.header.reserved = 0;
@@ -2021,7 +1978,6 @@ void initialize_rick_images(){
     rick_042.data_size = 1232;
     rick_042.data = rick_042_map;
 
-   rick_043 = 
     rick_043.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_043.header.always_zero = 0;
     rick_043.header.reserved = 0;
@@ -2030,7 +1986,6 @@ void initialize_rick_images(){
     rick_043.data_size = 1232;
     rick_043.data = rick_043_map;
 
-   rick_044 = 
     rick_044.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_044.header.always_zero = 0;
     rick_044.header.reserved = 0;
@@ -2039,7 +1994,6 @@ void initialize_rick_images(){
     rick_044.data_size = 1232;
     rick_044.data = rick_044_map;
 
-   rick_045 = 
     rick_045.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_045.header.always_zero = 0;
     rick_045.header.reserved = 0;
@@ -2048,7 +2002,6 @@ void initialize_rick_images(){
     rick_045.data_size = 1232;
     rick_045.data = rick_045_map;
 
-   rick_046 = 
     rick_046.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_046.header.always_zero = 0;
     rick_046.header.reserved = 0;
@@ -2057,7 +2010,6 @@ void initialize_rick_images(){
     rick_046.data_size = 1232;
     rick_046.data = rick_046_map;
 
-   rick_047 = 
     rick_047.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_047.header.always_zero = 0;
     rick_047.header.reserved = 0;
@@ -2066,7 +2018,6 @@ void initialize_rick_images(){
     rick_047.data_size = 1232;
     rick_047.data = rick_047_map;
 
-   rick_048 = 
     rick_048.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_048.header.always_zero = 0;
     rick_048.header.reserved = 0;
@@ -2075,7 +2026,6 @@ void initialize_rick_images(){
     rick_048.data_size = 1232;
     rick_048.data = rick_048_map;
 
-   rick_049 = 
     rick_049.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_049.header.always_zero = 0;
     rick_049.header.reserved = 0;
@@ -2084,7 +2034,6 @@ void initialize_rick_images(){
     rick_049.data_size = 1232;
     rick_049.data = rick_049_map;
 
-   rick_050 = 
     rick_050.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_050.header.always_zero = 0;
     rick_050.header.reserved = 0;
@@ -2093,7 +2042,6 @@ void initialize_rick_images(){
     rick_050.data_size = 1232;
     rick_050.data = rick_050_map;
 
-   rick_051 = 
     rick_051.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_051.header.always_zero = 0;
     rick_051.header.reserved = 0;
@@ -2102,7 +2050,6 @@ void initialize_rick_images(){
     rick_051.data_size = 1232;
     rick_051.data = rick_051_map;
 
-   rick_052 = 
     rick_052.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_052.header.always_zero = 0;
     rick_052.header.reserved = 0;
@@ -2111,7 +2058,6 @@ void initialize_rick_images(){
     rick_052.data_size = 1232;
     rick_052.data = rick_052_map;
 
-   rick_053 = 
     rick_053.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_053.header.always_zero = 0;
     rick_053.header.reserved = 0;
@@ -2120,7 +2066,6 @@ void initialize_rick_images(){
     rick_053.data_size = 1232;
     rick_053.data = rick_053_map;
 
-   rick_054 = 
     rick_054.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_054.header.always_zero = 0;
     rick_054.header.reserved = 0;
@@ -2129,7 +2074,6 @@ void initialize_rick_images(){
     rick_054.data_size = 1232;
     rick_054.data = rick_054_map;
 
-   rick_055 = 
     rick_055.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_055.header.always_zero = 0;
     rick_055.header.reserved = 0;
@@ -2138,7 +2082,6 @@ void initialize_rick_images(){
     rick_055.data_size = 1232;
     rick_055.data = rick_055_map;
 
-   rick_056 = 
     rick_056.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_056.header.always_zero = 0;
     rick_056.header.reserved = 0;
@@ -2147,7 +2090,6 @@ void initialize_rick_images(){
     rick_056.data_size = 1232;
     rick_056.data = rick_056_map;
 
-   rick_057 = 
     rick_057.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_057.header.always_zero = 0;
     rick_057.header.reserved = 0;
@@ -2156,7 +2098,6 @@ void initialize_rick_images(){
     rick_057.data_size = 1232;
     rick_057.data = rick_057_map;
 
-   rick_058 = 
     rick_058.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_058.header.always_zero = 0;
     rick_058.header.reserved = 0;
@@ -2165,7 +2106,6 @@ void initialize_rick_images(){
     rick_058.data_size = 1232;
     rick_058.data = rick_058_map;
 
-   rick_059 = 
     rick_059.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_059.header.always_zero = 0;
     rick_059.header.reserved = 0;
@@ -2174,7 +2114,6 @@ void initialize_rick_images(){
     rick_059.data_size = 1232;
     rick_059.data = rick_059_map;
 
-   rick_060 = 
     rick_060.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_060.header.always_zero = 0;
     rick_060.header.reserved = 0;
@@ -2183,7 +2122,6 @@ void initialize_rick_images(){
     rick_060.data_size = 1232;
     rick_060.data = rick_060_map;
 
-   rick_061 = 
     rick_061.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_061.header.always_zero = 0;
     rick_061.header.reserved = 0;
@@ -2192,7 +2130,6 @@ void initialize_rick_images(){
     rick_061.data_size = 1232;
     rick_061.data = rick_061_map;
 
-   rick_062 = 
     rick_062.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_062.header.always_zero = 0;
     rick_062.header.reserved = 0;
@@ -2201,7 +2138,6 @@ void initialize_rick_images(){
     rick_062.data_size = 1232;
     rick_062.data = rick_062_map;
 
-   rick_063 = 
     rick_063.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_063.header.always_zero = 0;
     rick_063.header.reserved = 0;
@@ -2210,7 +2146,6 @@ void initialize_rick_images(){
     rick_063.data_size = 1232;
     rick_063.data = rick_063_map;
 
-   rick_064 = 
     rick_064.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_064.header.always_zero = 0;
     rick_064.header.reserved = 0;
@@ -2219,7 +2154,6 @@ void initialize_rick_images(){
     rick_064.data_size = 1232;
     rick_064.data = rick_064_map;
 
-   rick_065 = 
     rick_065.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_065.header.always_zero = 0;
     rick_065.header.reserved = 0;
@@ -2228,7 +2162,6 @@ void initialize_rick_images(){
     rick_065.data_size = 1232;
     rick_065.data = rick_065_map;
 
-   rick_066 = 
     rick_066.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_066.header.always_zero = 0;
     rick_066.header.reserved = 0;
@@ -2237,7 +2170,6 @@ void initialize_rick_images(){
     rick_066.data_size = 1232;
     rick_066.data = rick_066_map;
 
-   rick_067 = 
     rick_067.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_067.header.always_zero = 0;
     rick_067.header.reserved = 0;
@@ -2246,7 +2178,6 @@ void initialize_rick_images(){
     rick_067.data_size = 1232;
     rick_067.data = rick_067_map;
 
-   rick_068 = 
     rick_068.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_068.header.always_zero = 0;
     rick_068.header.reserved = 0;
@@ -2255,7 +2186,6 @@ void initialize_rick_images(){
     rick_068.data_size = 1232;
     rick_068.data = rick_068_map;
 
-   rick_069 = 
     rick_069.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_069.header.always_zero = 0;
     rick_069.header.reserved = 0;
@@ -2264,7 +2194,6 @@ void initialize_rick_images(){
     rick_069.data_size = 1232;
     rick_069.data = rick_069_map;
 
-   rick_070 = 
     rick_070.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_070.header.always_zero = 0;
     rick_070.header.reserved = 0;
@@ -2273,7 +2202,6 @@ void initialize_rick_images(){
     rick_070.data_size = 1232;
     rick_070.data = rick_070_map;
 
-   rick_071 = 
     rick_071.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_071.header.always_zero = 0;
     rick_071.header.reserved = 0;
@@ -2282,7 +2210,6 @@ void initialize_rick_images(){
     rick_071.data_size = 1232;
     rick_071.data = rick_071_map;
 
-   rick_072 = 
     rick_072.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_072.header.always_zero = 0;
     rick_072.header.reserved = 0;
@@ -2291,7 +2218,6 @@ void initialize_rick_images(){
     rick_072.data_size = 1232;
     rick_072.data = rick_072_map;
 
-   rick_073 = 
     rick_073.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_073.header.always_zero = 0;
     rick_073.header.reserved = 0;
@@ -2300,7 +2226,6 @@ void initialize_rick_images(){
     rick_073.data_size = 1232;
     rick_073.data = rick_073_map;
 
-   rick_074 = 
     rick_074.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_074.header.always_zero = 0;
     rick_074.header.reserved = 0;
@@ -2309,7 +2234,6 @@ void initialize_rick_images(){
     rick_074.data_size = 1232;
     rick_074.data = rick_074_map;
 
-   rick_075 = 
     rick_075.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_075.header.always_zero = 0;
     rick_075.header.reserved = 0;
@@ -2318,7 +2242,6 @@ void initialize_rick_images(){
     rick_075.data_size = 1232;
     rick_075.data = rick_075_map;
 
-   rick_076 = 
     rick_076.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_076.header.always_zero = 0;
     rick_076.header.reserved = 0;
@@ -2327,7 +2250,6 @@ void initialize_rick_images(){
     rick_076.data_size = 1232;
     rick_076.data = rick_076_map;
 
-   rick_077 = 
     rick_077.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_077.header.always_zero = 0;
     rick_077.header.reserved = 0;
@@ -2336,7 +2258,6 @@ void initialize_rick_images(){
     rick_077.data_size = 1232;
     rick_077.data = rick_077_map;
 
-   rick_078 = 
     rick_078.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_078.header.always_zero = 0;
     rick_078.header.reserved = 0;
@@ -2345,7 +2266,6 @@ void initialize_rick_images(){
     rick_078.data_size = 1232;
     rick_078.data = rick_078_map;
 
-   rick_079 = 
     rick_079.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_079.header.always_zero = 0;
     rick_079.header.reserved = 0;
@@ -2354,7 +2274,6 @@ void initialize_rick_images(){
     rick_079.data_size = 1232;
     rick_079.data = rick_079_map;
 
-   rick_080 = 
     rick_080.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_080.header.always_zero = 0;
     rick_080.header.reserved = 0;
@@ -2363,7 +2282,6 @@ void initialize_rick_images(){
     rick_080.data_size = 1232;
     rick_080.data = rick_080_map;
 
-   rick_081 = 
     rick_081.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_081.header.always_zero = 0;
     rick_081.header.reserved = 0;
@@ -2372,7 +2290,6 @@ void initialize_rick_images(){
     rick_081.data_size = 1232;
     rick_081.data = rick_081_map;
 
-   rick_082 = 
     rick_082.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_082.header.always_zero = 0;
     rick_082.header.reserved = 0;
@@ -2381,7 +2298,6 @@ void initialize_rick_images(){
     rick_082.data_size = 1232;
     rick_082.data = rick_082_map;
 
-   rick_083 = 
     rick_083.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_083.header.always_zero = 0;
     rick_083.header.reserved = 0;
@@ -2390,7 +2306,6 @@ void initialize_rick_images(){
     rick_083.data_size = 1232;
     rick_083.data = rick_083_map;
 
-   rick_084 = 
     rick_084.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_084.header.always_zero = 0;
     rick_084.header.reserved = 0;
@@ -2399,7 +2314,6 @@ void initialize_rick_images(){
     rick_084.data_size = 1232;
     rick_084.data = rick_084_map;
 
-   rick_085 = 
     rick_085.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_085.header.always_zero = 0;
     rick_085.header.reserved = 0;
@@ -2408,7 +2322,6 @@ void initialize_rick_images(){
     rick_085.data_size = 1232;
     rick_085.data = rick_085_map;
 
-   rick_086 = 
     rick_086.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_086.header.always_zero = 0;
     rick_086.header.reserved = 0;
@@ -2417,7 +2330,6 @@ void initialize_rick_images(){
     rick_086.data_size = 1232;
     rick_086.data = rick_086_map;
 
-   rick_087 = 
     rick_087.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_087.header.always_zero = 0;
     rick_087.header.reserved = 0;
@@ -2426,7 +2338,6 @@ void initialize_rick_images(){
     rick_087.data_size = 1232;
     rick_087.data = rick_087_map;
 
-   rick_088 = 
     rick_088.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_088.header.always_zero = 0;
     rick_088.header.reserved = 0;
@@ -2435,7 +2346,6 @@ void initialize_rick_images(){
     rick_088.data_size = 1232;
     rick_088.data = rick_088_map;
 
-   rick_089 = 
     rick_089.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_089.header.always_zero = 0;
     rick_089.header.reserved = 0;
@@ -2444,7 +2354,6 @@ void initialize_rick_images(){
     rick_089.data_size = 1232;
     rick_089.data = rick_089_map;
 
-   rick_090 = 
     rick_090.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_090.header.always_zero = 0;
     rick_090.header.reserved = 0;
@@ -2453,7 +2362,6 @@ void initialize_rick_images(){
     rick_090.data_size = 1232;
     rick_090.data = rick_090_map;
 
-   rick_091 = 
     rick_091.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_091.header.always_zero = 0;
     rick_091.header.reserved = 0;
@@ -2462,7 +2370,6 @@ void initialize_rick_images(){
     rick_091.data_size = 1232;
     rick_091.data = rick_091_map;
 
-   rick_092 = 
     rick_092.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_092.header.always_zero = 0;
     rick_092.header.reserved = 0;
@@ -2471,7 +2378,6 @@ void initialize_rick_images(){
     rick_092.data_size = 1232;
     rick_092.data = rick_092_map;
 
-   rick_093 = 
     rick_093.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_093.header.always_zero = 0;
     rick_093.header.reserved = 0;
@@ -2480,7 +2386,6 @@ void initialize_rick_images(){
     rick_093.data_size = 1232;
     rick_093.data = rick_093_map;
 
-   rick_094 = 
     rick_094.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_094.header.always_zero = 0;
     rick_094.header.reserved = 0;
@@ -2489,7 +2394,6 @@ void initialize_rick_images(){
     rick_094.data_size = 1232;
     rick_094.data = rick_094_map;
 
-   rick_095 = 
     rick_095.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_095.header.always_zero = 0;
     rick_095.header.reserved = 0;
@@ -2498,7 +2402,6 @@ void initialize_rick_images(){
     rick_095.data_size = 1232;
     rick_095.data = rick_095_map;
 
-   rick_096 = 
     rick_096.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_096.header.always_zero = 0;
     rick_096.header.reserved = 0;
@@ -2507,7 +2410,6 @@ void initialize_rick_images(){
     rick_096.data_size = 1232;
     rick_096.data = rick_096_map;
 
-   rick_097 = 
     rick_097.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_097.header.always_zero = 0;
     rick_097.header.reserved = 0;
@@ -2516,7 +2418,6 @@ void initialize_rick_images(){
     rick_097.data_size = 1232;
     rick_097.data = rick_097_map;
 
-   rick_098 = 
     rick_098.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_098.header.always_zero = 0;
     rick_098.header.reserved = 0;
@@ -2525,7 +2426,6 @@ void initialize_rick_images(){
     rick_098.data_size = 1232;
     rick_098.data = rick_098_map;
 
-   rick_099 = 
     rick_099.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_099.header.always_zero = 0;
     rick_099.header.reserved = 0;
@@ -2534,7 +2434,6 @@ void initialize_rick_images(){
     rick_099.data_size = 1232;
     rick_099.data = rick_099_map;
 
-   rick_100 = 
     rick_100.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_100.header.always_zero = 0;
     rick_100.header.reserved = 0;
@@ -2543,7 +2442,6 @@ void initialize_rick_images(){
     rick_100.data_size = 1232;
     rick_100.data = rick_100_map;
 
-   rick_101 = 
     rick_101.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_101.header.always_zero = 0;
     rick_101.header.reserved = 0;
@@ -2552,7 +2450,6 @@ void initialize_rick_images(){
     rick_101.data_size = 1232;
     rick_101.data = rick_101_map;
 
-   rick_102 = 
     rick_102.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_102.header.always_zero = 0;
     rick_102.header.reserved = 0;
@@ -2561,7 +2458,6 @@ void initialize_rick_images(){
     rick_102.data_size = 1232;
     rick_102.data = rick_102_map;
 
-   rick_103 = 
     rick_103.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_103.header.always_zero = 0;
     rick_103.header.reserved = 0;
@@ -2570,7 +2466,6 @@ void initialize_rick_images(){
     rick_103.data_size = 1232;
     rick_103.data = rick_103_map;
 
-   rick_104 = 
     rick_104.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_104.header.always_zero = 0;
     rick_104.header.reserved = 0;
@@ -2579,7 +2474,6 @@ void initialize_rick_images(){
     rick_104.data_size = 1232;
     rick_104.data = rick_104_map;
 
-   rick_105 = 
     rick_105.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_105.header.always_zero = 0;
     rick_105.header.reserved = 0;
@@ -2588,7 +2482,6 @@ void initialize_rick_images(){
     rick_105.data_size = 1232;
     rick_105.data = rick_105_map;
 
-   rick_106 = 
     rick_106.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_106.header.always_zero = 0;
     rick_106.header.reserved = 0;
@@ -2597,7 +2490,6 @@ void initialize_rick_images(){
     rick_106.data_size = 1232;
     rick_106.data = rick_106_map;
 
-   rick_107 = 
     rick_107.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_107.header.always_zero = 0;
     rick_107.header.reserved = 0;
@@ -2606,7 +2498,6 @@ void initialize_rick_images(){
     rick_107.data_size = 1232;
     rick_107.data = rick_107_map;
 
-   rick_108 = 
     rick_108.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_108.header.always_zero = 0;
     rick_108.header.reserved = 0;
@@ -2615,7 +2506,6 @@ void initialize_rick_images(){
     rick_108.data_size = 1232;
     rick_108.data = rick_108_map;
 
-   rick_109 = 
     rick_109.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_109.header.always_zero = 0;
     rick_109.header.reserved = 0;
@@ -2624,7 +2514,6 @@ void initialize_rick_images(){
     rick_109.data_size = 1232;
     rick_109.data = rick_109_map;
 
-   rick_110 = 
     rick_110.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_110.header.always_zero = 0;
     rick_110.header.reserved = 0;
@@ -2633,7 +2522,6 @@ void initialize_rick_images(){
     rick_110.data_size = 1232;
     rick_110.data = rick_110_map;
 
-   rick_111 = 
     rick_111.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_111.header.always_zero = 0;
     rick_111.header.reserved = 0;
@@ -2642,7 +2530,6 @@ void initialize_rick_images(){
     rick_111.data_size = 1232;
     rick_111.data = rick_111_map;
 
-   rick_112 = 
     rick_112.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_112.header.always_zero = 0;
     rick_112.header.reserved = 0;
@@ -2651,7 +2538,6 @@ void initialize_rick_images(){
     rick_112.data_size = 1232;
     rick_112.data = rick_112_map;
 
-   rick_113 = 
     rick_113.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_113.header.always_zero = 0;
     rick_113.header.reserved = 0;
@@ -2660,7 +2546,6 @@ void initialize_rick_images(){
     rick_113.data_size = 1232;
     rick_113.data = rick_113_map;
 
-   rick_114 = 
     rick_114.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_114.header.always_zero = 0;
     rick_114.header.reserved = 0;
@@ -2669,7 +2554,6 @@ void initialize_rick_images(){
     rick_114.data_size = 1232;
     rick_114.data = rick_114_map;
 
-   rick_115 = 
     rick_115.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_115.header.always_zero = 0;
     rick_115.header.reserved = 0;
@@ -2678,7 +2562,6 @@ void initialize_rick_images(){
     rick_115.data_size = 1232;
     rick_115.data = rick_115_map;
 
-   rick_116 = 
     rick_116.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_116.header.always_zero = 0;
     rick_116.header.reserved = 0;
@@ -2687,7 +2570,6 @@ void initialize_rick_images(){
     rick_116.data_size = 1232;
     rick_116.data = rick_116_map;
 
-   rick_117 = 
     rick_117.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_117.header.always_zero = 0;
     rick_117.header.reserved = 0;
@@ -2696,7 +2578,6 @@ void initialize_rick_images(){
     rick_117.data_size = 1232;
     rick_117.data = rick_117_map;
 
-   rick_118 = 
     rick_118.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_118.header.always_zero = 0;
     rick_118.header.reserved = 0;
@@ -2705,7 +2586,6 @@ void initialize_rick_images(){
     rick_118.data_size = 1232;
     rick_118.data = rick_118_map;
 
-   rick_119 = 
     rick_119.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_119.header.always_zero = 0;
     rick_119.header.reserved = 0;
@@ -2714,7 +2594,6 @@ void initialize_rick_images(){
     rick_119.data_size = 1232;
     rick_119.data = rick_119_map;
 
-   rick_120 = 
     rick_120.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_120.header.always_zero = 0;
     rick_120.header.reserved = 0;
@@ -2723,7 +2602,6 @@ void initialize_rick_images(){
     rick_120.data_size = 1232;
     rick_120.data = rick_120_map;
 
-   rick_121 = 
     rick_121.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_121.header.always_zero = 0;
     rick_121.header.reserved = 0;
@@ -2732,7 +2610,6 @@ void initialize_rick_images(){
     rick_121.data_size = 1232;
     rick_121.data = rick_121_map;
 
-   rick_122 = 
     rick_122.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_122.header.always_zero = 0;
     rick_122.header.reserved = 0;
@@ -2741,7 +2618,6 @@ void initialize_rick_images(){
     rick_122.data_size = 1232;
     rick_122.data = rick_122_map;
 
-   rick_123 = 
     rick_123.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_123.header.always_zero = 0;
     rick_123.header.reserved = 0;
@@ -2750,7 +2626,6 @@ void initialize_rick_images(){
     rick_123.data_size = 1232;
     rick_123.data = rick_123_map;
 
-   rick_124 = 
     rick_124.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_124.header.always_zero = 0;
     rick_124.header.reserved = 0;
@@ -2759,7 +2634,6 @@ void initialize_rick_images(){
     rick_124.data_size = 1232;
     rick_124.data = rick_124_map;
 
-   rick_125 = 
     rick_125.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_125.header.always_zero = 0;
     rick_125.header.reserved = 0;
@@ -2768,7 +2642,6 @@ void initialize_rick_images(){
     rick_125.data_size = 1232;
     rick_125.data = rick_125_map;
 
-   rick_126 = 
     rick_126.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_126.header.always_zero = 0;
     rick_126.header.reserved = 0;
@@ -2777,7 +2650,6 @@ void initialize_rick_images(){
     rick_126.data_size = 1232;
     rick_126.data = rick_126_map;
 
-   rick_127 = 
     rick_127.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_127.header.always_zero = 0;
     rick_127.header.reserved = 0;
@@ -2786,7 +2658,6 @@ void initialize_rick_images(){
     rick_127.data_size = 1232;
     rick_127.data = rick_127_map;
 
-   rick_128 = 
     rick_128.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_128.header.always_zero = 0;
     rick_128.header.reserved = 0;
@@ -2795,7 +2666,6 @@ void initialize_rick_images(){
     rick_128.data_size = 1232;
     rick_128.data = rick_128_map;
 
-   rick_129 = 
     rick_129.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_129.header.always_zero = 0;
     rick_129.header.reserved = 0;
@@ -2804,7 +2674,6 @@ void initialize_rick_images(){
     rick_129.data_size = 1232;
     rick_129.data = rick_129_map;
 
-   rick_130 = 
     rick_130.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_130.header.always_zero = 0;
     rick_130.header.reserved = 0;
@@ -2813,7 +2682,6 @@ void initialize_rick_images(){
     rick_130.data_size = 1232;
     rick_130.data = rick_130_map;
 
-   rick_131 = 
     rick_131.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_131.header.always_zero = 0;
     rick_131.header.reserved = 0;
@@ -2822,7 +2690,6 @@ void initialize_rick_images(){
     rick_131.data_size = 1232;
     rick_131.data = rick_131_map;
 
-   rick_132 = 
     rick_132.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_132.header.always_zero = 0;
     rick_132.header.reserved = 0;
@@ -2831,7 +2698,6 @@ void initialize_rick_images(){
     rick_132.data_size = 1232;
     rick_132.data = rick_132_map;
 
-   rick_133 = 
     rick_133.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_133.header.always_zero = 0;
     rick_133.header.reserved = 0;
@@ -2840,7 +2706,6 @@ void initialize_rick_images(){
     rick_133.data_size = 1232;
     rick_133.data = rick_133_map;
 
-   rick_134 = 
     rick_134.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_134.header.always_zero = 0;
     rick_134.header.reserved = 0;
@@ -2849,7 +2714,6 @@ void initialize_rick_images(){
     rick_134.data_size = 1232;
     rick_134.data = rick_134_map;
 
-   rick_135 = 
     rick_135.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_135.header.always_zero = 0;
     rick_135.header.reserved = 0;
@@ -2858,7 +2722,6 @@ void initialize_rick_images(){
     rick_135.data_size = 1232;
     rick_135.data = rick_135_map;
 
-   rick_136 = 
     rick_136.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_136.header.always_zero = 0;
     rick_136.header.reserved = 0;
@@ -2867,7 +2730,6 @@ void initialize_rick_images(){
     rick_136.data_size = 1232;
     rick_136.data = rick_136_map;
 
-   rick_137 = 
     rick_137.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_137.header.always_zero = 0;
     rick_137.header.reserved = 0;
@@ -2876,7 +2738,6 @@ void initialize_rick_images(){
     rick_137.data_size = 1232;
     rick_137.data = rick_137_map;
 
-   rick_138 = 
     rick_138.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_138.header.always_zero = 0;
     rick_138.header.reserved = 0;
@@ -2885,7 +2746,6 @@ void initialize_rick_images(){
     rick_138.data_size = 1232;
     rick_138.data = rick_138_map;
 
-   rick_139 = 
     rick_139.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_139.header.always_zero = 0;
     rick_139.header.reserved = 0;
@@ -2894,7 +2754,6 @@ void initialize_rick_images(){
     rick_139.data_size = 1232;
     rick_139.data = rick_139_map;
 
-   rick_140 = 
     rick_140.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_140.header.always_zero = 0;
     rick_140.header.reserved = 0;
@@ -2903,7 +2762,6 @@ void initialize_rick_images(){
     rick_140.data_size = 1232;
     rick_140.data = rick_140_map;
 
-   rick_141 = 
     rick_141.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_141.header.always_zero = 0;
     rick_141.header.reserved = 0;
@@ -2912,7 +2770,6 @@ void initialize_rick_images(){
     rick_141.data_size = 1232;
     rick_141.data = rick_141_map;
 
-   rick_142 = 
     rick_142.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_142.header.always_zero = 0;
     rick_142.header.reserved = 0;
@@ -2921,7 +2778,6 @@ void initialize_rick_images(){
     rick_142.data_size = 1232;
     rick_142.data = rick_142_map;
 
-   rick_143 = 
     rick_143.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_143.header.always_zero = 0;
     rick_143.header.reserved = 0;
@@ -2930,7 +2786,6 @@ void initialize_rick_images(){
     rick_143.data_size = 1232;
     rick_143.data = rick_143_map;
 
-   rick_144 = 
     rick_144.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_144.header.always_zero = 0;
     rick_144.header.reserved = 0;
@@ -2939,7 +2794,6 @@ void initialize_rick_images(){
     rick_144.data_size = 1232;
     rick_144.data = rick_144_map;
 
-   rick_145 = 
     rick_145.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_145.header.always_zero = 0;
     rick_145.header.reserved = 0;
@@ -2948,7 +2802,6 @@ void initialize_rick_images(){
     rick_145.data_size = 1232;
     rick_145.data = rick_145_map;
 
-   rick_146 = 
     rick_146.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_146.header.always_zero = 0;
     rick_146.header.reserved = 0;
@@ -2957,7 +2810,6 @@ void initialize_rick_images(){
     rick_146.data_size = 1232;
     rick_146.data = rick_146_map;
 
-   rick_147 = 
     rick_147.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_147.header.always_zero = 0;
     rick_147.header.reserved = 0;
@@ -2966,7 +2818,6 @@ void initialize_rick_images(){
     rick_147.data_size = 1232;
     rick_147.data = rick_147_map;
 
-   rick_148 = 
     rick_148.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_148.header.always_zero = 0;
     rick_148.header.reserved = 0;
@@ -2975,7 +2826,6 @@ void initialize_rick_images(){
     rick_148.data_size = 1232;
     rick_148.data = rick_148_map;
 
-   rick_149 = 
     rick_149.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_149.header.always_zero = 0;
     rick_149.header.reserved = 0;
@@ -2984,7 +2834,6 @@ void initialize_rick_images(){
     rick_149.data_size = 1232;
     rick_149.data = rick_149_map;
 
-   rick_150 = 
     rick_150.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_150.header.always_zero = 0;
     rick_150.header.reserved = 0;
@@ -2993,7 +2842,6 @@ void initialize_rick_images(){
     rick_150.data_size = 1232;
     rick_150.data = rick_150_map;
 
-   rick_151 = 
     rick_151.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_151.header.always_zero = 0;
     rick_151.header.reserved = 0;
@@ -3002,7 +2850,6 @@ void initialize_rick_images(){
     rick_151.data_size = 1232;
     rick_151.data = rick_151_map;
 
-   rick_152 = 
     rick_152.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_152.header.always_zero = 0;
     rick_152.header.reserved = 0;
@@ -3011,7 +2858,6 @@ void initialize_rick_images(){
     rick_152.data_size = 1232;
     rick_152.data = rick_152_map;
 
-   rick_153 = 
     rick_153.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_153.header.always_zero = 0;
     rick_153.header.reserved = 0;
@@ -3020,7 +2866,6 @@ void initialize_rick_images(){
     rick_153.data_size = 1232;
     rick_153.data = rick_153_map;
 
-   rick_154 = 
     rick_154.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_154.header.always_zero = 0;
     rick_154.header.reserved = 0;
@@ -3029,7 +2874,6 @@ void initialize_rick_images(){
     rick_154.data_size = 1232;
     rick_154.data = rick_154_map;
 
-   rick_155 = 
     rick_155.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_155.header.always_zero = 0;
     rick_155.header.reserved = 0;
@@ -3038,7 +2882,6 @@ void initialize_rick_images(){
     rick_155.data_size = 1232;
     rick_155.data = rick_155_map;
 
-   rick_156 = 
     rick_156.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_156.header.always_zero = 0;
     rick_156.header.reserved = 0;
@@ -3047,7 +2890,6 @@ void initialize_rick_images(){
     rick_156.data_size = 1232;
     rick_156.data = rick_156_map;
 
-   rick_157 = 
     rick_157.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_157.header.always_zero = 0;
     rick_157.header.reserved = 0;
@@ -3056,7 +2898,6 @@ void initialize_rick_images(){
     rick_157.data_size = 1232;
     rick_157.data = rick_157_map;
 
-   rick_158 = 
     rick_158.header.cf = LV_IMG_CF_INDEXED_1BIT;
     rick_158.header.always_zero = 0;
     rick_158.header.reserved = 0;
@@ -3064,5 +2905,6 @@ void initialize_rick_images(){
     rick_158.header.h = 68;
     rick_158.data_size = 1232;
     rick_158.data = rick_158_map;
+
 
 }
