@@ -83,7 +83,7 @@ void ExpandRLEArray(uint8_t idx, uint8_t expandedArray[]) {
         }
     }
 
-    char *imgData = arrayToHexString(expandedArray, 1240);
+    char *imgData = "Dummy Data";// arrayToHexString(expandedArray, 1240);
     LOG_DBG("Logging img data %i, imgData: %s", idx, imgData);
 }
 
