@@ -33,7 +33,7 @@ long rleLengths[2]={543, 536}
 
 void ExpandRLEArray(uint8_t idx, uint8_t expandedArray[]) {
     uint8_t *rleArray = imgData[idx];
-    uint8_t rleLength = sizeof(imgData[idx])/sizeof(imgData[0][0]);
+    uint8_t rleLength = rleLengths[idx];
     
     int index = 8;
     int expandedIndex = 0;
