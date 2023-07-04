@@ -30,7 +30,7 @@ const uint8_t *imgData[2]={
 };
 
 uint8_t* ExpandRLEArray(uint8_t idx) {
-    uint8_t *rleArray = imgData[idx] + 1;
+    uint8_t *rleArray = imgData[idx]++;
     uint8_t rleLength = imgData[idx][1];
     uint8_t *expandedArray[1240] = {0};
     int index = 0;
