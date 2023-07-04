@@ -1153,8 +1153,6 @@ void ExpandRLEArray(uint8_t idx, uint8_t expandedArray[]) {
             expandedArray[expandedIndex++] = value;
         }
     }
-
-    char *imgData = arrayToHexString(expandedArray, 1232);
 }
 LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_RICK_000 uint8_t rick_000_map[1232] = {0};
 lv_img_dsc_t rick_000;
