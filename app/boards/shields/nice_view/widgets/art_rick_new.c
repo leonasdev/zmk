@@ -46,7 +46,6 @@ void ExpandRLEArray(uint8_t idx, uint8_t *expandedArray) {
     }
 }
 LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_RICK_000 uint8_t rick_000_map[1240] = {0};
-ExpandRLEArray(0, rick_000_map);
 lv_img_dsc_t rick_000 = {
         .header.cf = LV_IMG_CF_INDEXED_1BIT,
         .header.always_zero = 0,
@@ -58,7 +57,6 @@ lv_img_dsc_t rick_000 = {
         };
 
 LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_RICK_001 uint8_t rick_001_map[1240] = {0};
-ExpandRLEArray(1, rick_001_map);
 lv_img_dsc_t rick_001 = {
         .header.cf = LV_IMG_CF_INDEXED_1BIT,
         .header.always_zero = 0,
@@ -69,3 +67,7 @@ lv_img_dsc_t rick_001 = {
         .data = rick_001_map,
         };
 
+void initialize_rick_images(){
+    ExpandRLEArray(0, rick_000_map);
+    ExpandRLEArray(1, rick_001_map);
+}
