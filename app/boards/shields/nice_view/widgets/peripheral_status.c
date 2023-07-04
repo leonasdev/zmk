@@ -647,8 +647,8 @@ const void *countdown_images_3[] = {
     &countdown_200, &countdown_201, &countdown_202, &countdown_203, &countdown_204, &countdown_205, &countdown_206, &countdown_207, &countdown_208, &countdown_209, &countdown_210, &countdown_211, &countdown_212, &countdown_213, &countdown_214, &countdown_215, &countdown_216, &countdown_217, &countdown_218, &countdown_219, &countdown_220, &countdown_221, &countdown_222, &countdown_223, &countdown_224, &countdown_225, &countdown_226, &countdown_227, &countdown_228
 };
 
-// LV_IMG_DECLARE(rick_000)
-// LV_IMG_DECLARE(rick_001)
+LV_IMG_DECLARE(rick_000)
+LV_IMG_DECLARE(rick_001)
 // LV_IMG_DECLARE(rick_002)
 // LV_IMG_DECLARE(rick_003)
 // LV_IMG_DECLARE(rick_004)
@@ -806,8 +806,10 @@ const void *countdown_images_3[] = {
 // LV_IMG_DECLARE(rick_156)
 // LV_IMG_DECLARE(rick_157)
 // LV_IMG_DECLARE(rick_158)
-// const void *rick_images[] = {
-// &rick_000, &rick_001, &rick_002, &rick_003, &rick_004, &rick_005, &rick_006, &rick_007, &rick_008, &rick_009, &rick_010, &rick_011, &rick_012, &rick_013, &rick_014, &rick_015, &rick_016, &rick_017, &rick_018, &rick_019, &rick_020, &rick_021, &rick_022, &rick_023, &rick_024, &rick_025, &rick_026, &rick_027, &rick_028, &rick_029, &rick_030, &rick_031, &rick_032, &rick_033, &rick_034, &rick_035, &rick_036, &rick_037, &rick_038, &rick_039, &rick_040, &rick_041, &rick_042, &rick_043, &rick_044, &rick_045, &rick_046, &rick_047, &rick_048, &rick_049, &rick_050, &rick_051, &rick_052, &rick_053, &rick_054, &rick_055, &rick_056, &rick_057, &rick_058, &rick_059, &rick_060, &rick_061, &rick_062, &rick_063, &rick_064, &rick_065, &rick_066, &rick_067, &rick_068, &rick_069, &rick_070, &rick_071, &rick_072, &rick_073, &rick_074, &rick_075, &rick_076, &rick_077, &rick_078, &rick_079, &rick_080, &rick_081, &rick_082, &rick_083, &rick_084, &rick_085, &rick_086, &rick_087, &rick_088, &rick_089, &rick_090, &rick_091, &rick_092, &rick_093, &rick_094, &rick_095, &rick_096, &rick_097, &rick_098, &rick_099, &rick_100, &rick_101, &rick_102, &rick_103, &rick_104, &rick_105, &rick_106, &rick_107, &rick_108, &rick_109, &rick_110, &rick_111, &rick_112, &rick_113, &rick_114, &rick_115, &rick_116, &rick_117, &rick_118, &rick_119, &rick_120, &rick_121, &rick_122, &rick_123, &rick_124, &rick_125, &rick_126, &rick_127, &rick_128, &rick_129, &rick_130, &rick_131, &rick_132, &rick_133, &rick_134, &rick_135, &rick_136, &rick_137, &rick_138, &rick_139, &rick_140, &rick_141, &rick_142, &rick_143, &rick_144, &rick_145, &rick_146, &rick_147, &rick_148, &rick_149, &rick_150, &rick_151, &rick_152, &rick_153, &rick_154, &rick_155, &rick_156, &rick_157, &rick_158};
+const void *rick_images[] = {
+&rick_000, &rick_001
+};
+//&rick_002, &rick_003, &rick_004, &rick_005, &rick_006, &rick_007, &rick_008, &rick_009, &rick_010, &rick_011, &rick_012, &rick_013, &rick_014, &rick_015, &rick_016, &rick_017, &rick_018, &rick_019, &rick_020, &rick_021, &rick_022, &rick_023, &rick_024, &rick_025, &rick_026, &rick_027, &rick_028, &rick_029, &rick_030, &rick_031, &rick_032, &rick_033, &rick_034, &rick_035, &rick_036, &rick_037, &rick_038, &rick_039, &rick_040, &rick_041, &rick_042, &rick_043, &rick_044, &rick_045, &rick_046, &rick_047, &rick_048, &rick_049, &rick_050, &rick_051, &rick_052, &rick_053, &rick_054, &rick_055, &rick_056, &rick_057, &rick_058, &rick_059, &rick_060, &rick_061, &rick_062, &rick_063, &rick_064, &rick_065, &rick_066, &rick_067, &rick_068, &rick_069, &rick_070, &rick_071, &rick_072, &rick_073, &rick_074, &rick_075, &rick_076, &rick_077, &rick_078, &rick_079, &rick_080, &rick_081, &rick_082, &rick_083, &rick_084, &rick_085, &rick_086, &rick_087, &rick_088, &rick_089, &rick_090, &rick_091, &rick_092, &rick_093, &rick_094, &rick_095, &rick_096, &rick_097, &rick_098, &rick_099, &rick_100, &rick_101, &rick_102, &rick_103, &rick_104, &rick_105, &rick_106, &rick_107, &rick_108, &rick_109, &rick_110, &rick_111, &rick_112, &rick_113, &rick_114, &rick_115, &rick_116, &rick_117, &rick_118, &rick_119, &rick_120, &rick_121, &rick_122, &rick_123, &rick_124, &rick_125, &rick_126, &rick_127, &rick_128, &rick_129, &rick_130, &rick_131, &rick_132, &rick_133, &rick_134, &rick_135, &rick_136, &rick_137, &rick_138, &rick_139, &rick_140, &rick_141, &rick_142, &rick_143, &rick_144, &rick_145, &rick_146, &rick_147, &rick_148, &rick_149, &rick_150, &rick_151, &rick_152, &rick_153, &rick_154, &rick_155, &rick_156, &rick_157, &rick_158};
 
 
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
@@ -897,7 +899,7 @@ long long int idx = 0;
 void set_img_src(void *var, int32_t val) {
     lv_obj_t *img = (lv_obj_t *)var;
 
-    lv_img_set_src(img, rocket_rush_images[val]);
+    lv_img_set_src(img, rick_images[val]);
 }
 
 int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
@@ -909,8 +911,8 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
     lv_canvas_set_buffer(top, widget->cbuf, DISP_WIDTH, 20, LV_IMG_CF_TRUE_COLOR);
 
     // Params
-    int anim_len = 78;
-    int per_frame_time_in_ms = 30;
+    int anim_len = 2;
+    int per_frame_time_in_ms = 1000;
     // images = countdown_images;
 
     // Init animations
