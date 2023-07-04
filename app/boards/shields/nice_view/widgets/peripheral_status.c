@@ -913,7 +913,7 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
 
     // Params
     int anim_len = 2;
-    int per_frame_time_in_ms = 10000;
+    int per_frame_time_in_ms = 1000;
     // images = countdown_images;
 
     initialize_rick_images();
@@ -927,7 +927,7 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
     lv_anim_set_values(&widget->anim, 0, anim_len-1);
     lv_anim_set_exec_cb(&widget->anim, (lv_anim_exec_xcb_t)set_img_src);
     lv_anim_set_repeat_count(&widget->anim, LV_ANIM_REPEAT_INFINITE);
-    lv_anim_set_delay(&widget->anim, 10000);
+    lv_anim_set_delay(&widget->anim, 1000);
     lv_anim_start(&widget->anim);
 
     sys_slist_append(&widgets, &widget->node);
