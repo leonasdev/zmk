@@ -107,18 +107,59 @@ LV_IMG_DECLARE(rocket_rush_074)
 LV_IMG_DECLARE(rocket_rush_075)
 LV_IMG_DECLARE(rocket_rush_076)
 LV_IMG_DECLARE(rocket_rush_077)
-const void *rocket_rush_images[] = {
-        &rocket_rush_000, &rocket_rush_001, &rocket_rush_002, &rocket_rush_003, &rocket_rush_004, &rocket_rush_005, &rocket_rush_006, &rocket_rush_007, &rocket_rush_008, &rocket_rush_009, &rocket_rush_010, &rocket_rush_011, &rocket_rush_012, &rocket_rush_013, &rocket_rush_014, &rocket_rush_015, &rocket_rush_016, &rocket_rush_017, &rocket_rush_018, &rocket_rush_019, &rocket_rush_020, &rocket_rush_021, &rocket_rush_022, &rocket_rush_023, &rocket_rush_024, &rocket_rush_025, &rocket_rush_026, &rocket_rush_027, &rocket_rush_028, &rocket_rush_029, &rocket_rush_030, &rocket_rush_031, &rocket_rush_032, &rocket_rush_033, &rocket_rush_034, &rocket_rush_035, &rocket_rush_036, &rocket_rush_037, &rocket_rush_038, &rocket_rush_039, &rocket_rush_040, &rocket_rush_041, &rocket_rush_042, &rocket_rush_043, &rocket_rush_044, &rocket_rush_045, &rocket_rush_046, &rocket_rush_047, &rocket_rush_048, &rocket_rush_049, &rocket_rush_050, &rocket_rush_051, &rocket_rush_052, &rocket_rush_053, &rocket_rush_054, &rocket_rush_055, &rocket_rush_056, &rocket_rush_057, &rocket_rush_058, &rocket_rush_059, &rocket_rush_060, &rocket_rush_061, &rocket_rush_062, &rocket_rush_063, &rocket_rush_064, &rocket_rush_065, &rocket_rush_066, &rocket_rush_067, &rocket_rush_068, &rocket_rush_069, &rocket_rush_070, &rocket_rush_071, &rocket_rush_072, &rocket_rush_073, &rocket_rush_074, &rocket_rush_075, &rocket_rush_076, &rocket_rush_077
-    };
+
+LV_IMG_DECLARE(countdown_000)
+LV_IMG_DECLARE(countdown_001)
+LV_IMG_DECLARE(countdown_002)
+LV_IMG_DECLARE(countdown_003)
+LV_IMG_DECLARE(countdown_004)
+LV_IMG_DECLARE(countdown_005)
+LV_IMG_DECLARE(countdown_006)
+LV_IMG_DECLARE(countdown_007)
+LV_IMG_DECLARE(countdown_008)
+LV_IMG_DECLARE(countdown_009)
+LV_IMG_DECLARE(countdown_010)
+LV_IMG_DECLARE(countdown_011)
+LV_IMG_DECLARE(countdown_012)
+LV_IMG_DECLARE(countdown_013)
+LV_IMG_DECLARE(countdown_014)
+LV_IMG_DECLARE(countdown_015)
+LV_IMG_DECLARE(countdown_016)
+LV_IMG_DECLARE(countdown_017)
+LV_IMG_DECLARE(countdown_018)
+LV_IMG_DECLARE(countdown_019)
+LV_IMG_DECLARE(countdown_020)
+LV_IMG_DECLARE(countdown_021)
+LV_IMG_DECLARE(countdown_022)
+LV_IMG_DECLARE(countdown_023)
+LV_IMG_DECLARE(countdown_024)
+LV_IMG_DECLARE(countdown_025)
+LV_IMG_DECLARE(countdown_026)
+LV_IMG_DECLARE(countdown_027)
+LV_IMG_DECLARE(countdown_028)
+LV_IMG_DECLARE(countdown_029)
+LV_IMG_DECLARE(countdown_030)
+LV_IMG_DECLARE(countdown_031)
+
+const struct Animation countdown_anim = {
+    .frameCount = 32,
+    .timeGap = 25,
+    .repetition = -1,
+    .images = {
+        &countdown_000, &countdown_001, &countdown_002, &countdown_003, &countdown_004, &countdown_005, &countdown_006, &countdown_007, &countdown_008, &countdown_009, &countdown_010, &countdown_011, &countdown_012, &countdown_013, &countdown_014, &countdown_015, &countdown_016, &countdown_017, &countdown_018, &countdown_019, &countdown_020, &countdown_021, &countdown_022, &countdown_023, &countdown_024, &countdown_025, &countdown_026, &countdown_027, &countdown_028, &countdown_029, &countdown_030, &countdown_031
+    }
+};
 
 const struct Animation rocket_rush_anim = {
     .frameCount = 78,
-    .timeGap = 40,
+    .timeGap = 30,
     .repetition = -1,
     .images = {
         &rocket_rush_000, &rocket_rush_001, &rocket_rush_002, &rocket_rush_003, &rocket_rush_004, &rocket_rush_005, &rocket_rush_006, &rocket_rush_007, &rocket_rush_008, &rocket_rush_009, &rocket_rush_010, &rocket_rush_011, &rocket_rush_012, &rocket_rush_013, &rocket_rush_014, &rocket_rush_015, &rocket_rush_016, &rocket_rush_017, &rocket_rush_018, &rocket_rush_019, &rocket_rush_020, &rocket_rush_021, &rocket_rush_022, &rocket_rush_023, &rocket_rush_024, &rocket_rush_025, &rocket_rush_026, &rocket_rush_027, &rocket_rush_028, &rocket_rush_029, &rocket_rush_030, &rocket_rush_031, &rocket_rush_032, &rocket_rush_033, &rocket_rush_034, &rocket_rush_035, &rocket_rush_036, &rocket_rush_037, &rocket_rush_038, &rocket_rush_039, &rocket_rush_040, &rocket_rush_041, &rocket_rush_042, &rocket_rush_043, &rocket_rush_044, &rocket_rush_045, &rocket_rush_046, &rocket_rush_047, &rocket_rush_048, &rocket_rush_049, &rocket_rush_050, &rocket_rush_051, &rocket_rush_052, &rocket_rush_053, &rocket_rush_054, &rocket_rush_055, &rocket_rush_056, &rocket_rush_057, &rocket_rush_058, &rocket_rush_059, &rocket_rush_060, &rocket_rush_061, &rocket_rush_062, &rocket_rush_063, &rocket_rush_064, &rocket_rush_065, &rocket_rush_066, &rocket_rush_067, &rocket_rush_068, &rocket_rush_069, &rocket_rush_070, &rocket_rush_071, &rocket_rush_072, &rocket_rush_073, &rocket_rush_074, &rocket_rush_075, &rocket_rush_076, &rocket_rush_077
     }
 };
+
+const struct Animation currentAnimation = countdown_anim;
 
 
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
@@ -208,7 +249,7 @@ long long int idx = 0;
 void set_img_src(void *var, int32_t val) {
     lv_obj_t *img = (lv_obj_t *)var;
 
-    lv_img_set_src(img, rocket_rush_anim.images[val]);
+    lv_img_set_src(img, currentAnimation.images[val]);
 }
 
 int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
@@ -220,8 +261,8 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
     lv_canvas_set_buffer(top, widget->cbuf, DISP_WIDTH, 20, LV_IMG_CF_TRUE_COLOR);
 
     // Params
-    int anim_len = rocket_rush_anim.frameCount;
-    int per_frame_time_in_ms = rocket_rush_anim.timeGap;
+    int anim_len = currentAnimation.frameCount;
+    int per_frame_time_in_ms = currentAnimation.timeGap;
 
     // Init animations
     LOG_DBG("Setting animation!");
