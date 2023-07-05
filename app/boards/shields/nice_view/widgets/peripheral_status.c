@@ -246,26 +246,9 @@ const void **images;
 uint8_t images_len;
 
 long long int idx = 0;
-void set_img_src(void *var, int32_t val) {
-    lv_obj_t *img = (lv_obj_t *)var;
+struct zmk_widget_status *lastWidget;
 
-    lv_img_set_src(img, currentAnimation.images[val]);
-}
-
-void set_img_custom_src(lv_anim_t *a, int32_t val) {
-    lv_obj_t *img = (lv_obj_t *)(a->var);
-
-    lv_img_set_src(img, currentAnimation.images[val]);
-}
-
-int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
-    widget->obj = lv_img_create(parent);
-    
-    lv_obj_set_size(widget->obj, 160, DISP_WIDTH);
-    lv_obj_t *top = lv_canvas_create(widget->obj);
-    lv_obj_align(top, LV_ALIGN_TOP_RIGHT, DISP_WIDTH, 0);
-    lv_canvas_set_buffer(top, widget->cbuf, DISP_WIDTH, 20, LV_IMG_CF_TRUE_COLOR);
-
+void set_anim(){
     // Params
     int anim_len = currentAnimation.frameCount;
     int per_frame_time_in_ms = currentAnimation.timeGap;
@@ -273,15 +256,32 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
     // Init animations
     LOG_DBG("Setting animation!");
 
-    lv_anim_init(&widget->anim);
-    lv_anim_set_var(&widget->anim, widget->obj);
-    lv_anim_set_time(&widget->anim, anim_len*per_frame_time_in_ms);
-    lv_anim_set_values(&widget->anim, 0, anim_len-1);
-    // lv_anim_set_exec_cb(&widget->anim, (lv_anim_exec_xcb_t)set_img_src);
-    lv_anim_set_custom_exec_cb(&widget->anim, set_img_custom_src);
-    lv_anim_set_repeat_count(&widget->anim, LV_ANIM_REPEAT_INFINITE);
-    lv_anim_set_delay(&widget->anim, 1000);
-    lv_anim_start(&widget->anim);
+    lv_anim_init(&lastWidget->anim);
+    lv_anim_set_var(&lastWidget->anim, lastWidget->obj);
+    lv_anim_set_time(&lastWidget->anim, anim_len*per_frame_time_in_ms);
+    lv_anim_set_values(&lastWidget->anim, 0, anim_len-1);
+    lv_anim_set_exec_cb(&lastWidget->anim, (lv_anim_exec_xcb_t)set_img_src);
+    lv_anim_set_repeat_count(&lastWidget->anim, LV_ANIM_REPEAT_INFINITE);
+    lv_anim_set_delay(&lastWidget->anim, 0);
+    lv_anim_start(&lastWidget->anim);
+}
+
+void set_img_src(void *var, int32_t val) {
+    lv_obj_t *img = (lv_obj_t *)var;
+    idx++;
+    lv_img_set_src(img, currentAnimation.images[val]);
+}
+
+int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
+    lastWidget = widget;
+    widget->obj = lv_img_create(parent);
+    
+    lv_obj_set_size(widget->obj, 160, DISP_WIDTH);
+    lv_obj_t *top = lv_canvas_create(widget->obj);
+    lv_obj_align(top, LV_ALIGN_TOP_RIGHT, DISP_WIDTH, 0);
+    lv_canvas_set_buffer(top, widget->cbuf, DISP_WIDTH, 20, LV_IMG_CF_TRUE_COLOR);
+
+    set_anim();
 
     sys_slist_append(&widgets, &widget->node);
 
