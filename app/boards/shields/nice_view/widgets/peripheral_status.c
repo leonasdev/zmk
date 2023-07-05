@@ -143,8 +143,8 @@ LV_IMG_DECLARE(countdown_031)
 
 const struct Animation countdown_anim = {
     .frameCount = 32,
-    .timeGap = 120,
-    .repetition = 2,
+    .timeGap = 130,
+    .repetition = 1,
     .images = {
         &countdown_000, &countdown_001, &countdown_002, &countdown_003, &countdown_004, &countdown_005, &countdown_006, &countdown_007, &countdown_008, &countdown_009, &countdown_010, &countdown_011, &countdown_012, &countdown_013, &countdown_014, &countdown_015, &countdown_016, &countdown_017, &countdown_018, &countdown_019, &countdown_020, &countdown_021, &countdown_022, &countdown_023, &countdown_024, &countdown_025, &countdown_026, &countdown_027, &countdown_028, &countdown_029, &countdown_030, &countdown_031
     }
@@ -272,13 +272,13 @@ void set_img_src(void *var, int32_t val) {
     lv_obj_t *img = (lv_obj_t *)var;
     
     lv_img_set_src(img, anims[currentAnimIdx]->images[val]);
-//     if(anims[currentAnimIdx].repetition != -1){
-//         framesPlayed++;
-//         if(anims[currentAnimIdx].repetition * anims[currentAnimIdx].frameCount == framesPlayed){
-//             currentAnimIdx++;
-//             set_anim();
-//         }
-//     }
+    if(anims[currentAnimIdx]->repetition != -1){
+        framesPlayed++;
+        if(anims[currentAnimIdx]->repetition * anims[currentAnimIdx]->frameCount == framesPlayed){
+            currentAnimIdx++;
+            set_anim();
+        }
+    }
 }
 
 int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
