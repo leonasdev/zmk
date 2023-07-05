@@ -279,7 +279,7 @@ void set_img_src(void *var, int32_t val) {
 //             set_anim();
 //         }
 //     }
-// }
+}
 
 int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
     lastWidget = widget;
