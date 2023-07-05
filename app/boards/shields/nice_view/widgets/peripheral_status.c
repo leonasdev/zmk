@@ -160,7 +160,7 @@ const struct Animation rocket_rush_anim = {
 };
 
 int currentAnimIdx = 0;
-const struct Animation anims[] = {countdown_anim, rocket_rush_anim};
+const struct Animation *anims[] = {&countdown_anim, &rocket_rush_anim};
 
 
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
@@ -251,8 +251,8 @@ void set_img_src(void *var, int32_t val);
 
 void set_anim(){
     // Params
-    int anim_len = anims[currentAnimIdx].frameCount;
-    int per_frame_time_in_ms = anims[currentAnimIdx].timeGap;
+    int anim_len = anims[currentAnimIdx]->frameCount;
+    int per_frame_time_in_ms = anims[currentAnimIdx]->timeGap;
 
     // Init animations
     LOG_DBG("Setting animation!");
@@ -271,15 +271,15 @@ long long int framesPlayed = 0;
 void set_img_src(void *var, int32_t val) {
     lv_obj_t *img = (lv_obj_t *)var;
     
-    lv_img_set_src(img, anims[currentAnimIdx].images[val]);
-    if(anims[currentAnimIdx].repetition != -1){
-        framesPlayed++;
-        if(anims[currentAnimIdx].repetition * anims[currentAnimIdx].frameCount == framesPlayed){
-            currentAnimIdx++;
-            set_anim();
-        }
-    }
-}
+    lv_img_set_src(img, anims[currentAnimIdx]->images[val]);
+//     if(anims[currentAnimIdx].repetition != -1){
+//         framesPlayed++;
+//         if(anims[currentAnimIdx].repetition * anims[currentAnimIdx].frameCount == framesPlayed){
+//             currentAnimIdx++;
+//             set_anim();
+//         }
+//     }
+// }
 
 int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
     lastWidget = widget;
