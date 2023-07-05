@@ -144,7 +144,7 @@ LV_IMG_DECLARE(countdown_031)
 const struct Animation countdown_anim = {
     .frameCount = 32,
     .timeGap = 120,
-    .repetition = -1,
+    .repetition = 2,
     .images = {
         &countdown_000, &countdown_001, &countdown_002, &countdown_003, &countdown_004, &countdown_005, &countdown_006, &countdown_007, &countdown_008, &countdown_009, &countdown_010, &countdown_011, &countdown_012, &countdown_013, &countdown_014, &countdown_015, &countdown_016, &countdown_017, &countdown_018, &countdown_019, &countdown_020, &countdown_021, &countdown_022, &countdown_023, &countdown_024, &countdown_025, &countdown_026, &countdown_027, &countdown_028, &countdown_029, &countdown_030, &countdown_031
     }
@@ -159,7 +159,8 @@ const struct Animation rocket_rush_anim = {
     }
 };
 
-const struct Animation currentAnimation = countdown_anim;
+int currentAnimIdx = 0;
+const struct Animation anims[] = {countdown_anim, rocket_rush_anim};
 
 
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
@@ -245,14 +246,13 @@ ZMK_SUBSCRIPTION(widget_peripheral_status, zmk_split_peripheral_status_changed);
 const void **images;
 uint8_t images_len;
 
-long long int idx = 0;
 struct zmk_widget_status *lastWidget;
 void set_img_src(void *var, int32_t val);
 
 void set_anim(){
     // Params
-    int anim_len = currentAnimation.frameCount;
-    int per_frame_time_in_ms = currentAnimation.timeGap;
+    int anim_len = anims[currentAnimIdx].frameCount;
+    int per_frame_time_in_ms = anims[currentAnimIdx].timeGap;
 
     // Init animations
     LOG_DBG("Setting animation!");
@@ -267,10 +267,19 @@ void set_anim(){
     lv_anim_start(&lastWidget->anim);
 }
 
+long long int framesPlayed = 0;
 void set_img_src(void *var, int32_t val) {
     lv_obj_t *img = (lv_obj_t *)var;
-    idx++;
-    lv_img_set_src(img, currentAnimation.images[val]);
+    struct Animation anim = anims[currentAnimIdx];
+    
+    lv_img_set_src(img, anim.images[val]);
+    if(anim.repetition != -1){
+        framesPlayed++;
+        if(anim.repetition * anim.frameCount == framesPlayed){
+            currentAnimIdx++;
+            set_anim();
+        }
+    }
 }
 
 int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
