@@ -206,7 +206,7 @@ long long int idx = 0;
 void set_img_src(void *var, int32_t val) {
     lv_obj_t *img = (lv_obj_t *)var;
 
-    lv_img_set_src(img, rocket_rush_anim.images[val]);
+    lv_img_set_src(img, rocket_rush_images[val]);
 }
 
 int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
