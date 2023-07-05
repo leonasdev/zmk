@@ -27,7 +27,7 @@ struct Animation{
     const int timeGap;
     const int repetition;
     const void *images[];
-}
+};
 
 LV_IMG_DECLARE(rocket_rush_000)
 LV_IMG_DECLARE(rocket_rush_001)
