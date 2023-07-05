@@ -252,6 +252,12 @@ void set_img_src(void *var, int32_t val) {
     lv_img_set_src(img, currentAnimation.images[val]);
 }
 
+void set_img_custom_src(lv_anim_t *a, int32_t val) {
+    lv_obj_t *img = (lv_obj_t *)(a->var);
+
+    lv_img_set_src(img, currentAnimation.images[val]);
+}
+
 int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
     widget->obj = lv_img_create(parent);
     
@@ -271,7 +277,8 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
     lv_anim_set_var(&widget->anim, widget->obj);
     lv_anim_set_time(&widget->anim, anim_len*per_frame_time_in_ms);
     lv_anim_set_values(&widget->anim, 0, anim_len-1);
-    lv_anim_set_exec_cb(&widget->anim, (lv_anim_exec_xcb_t)set_img_src);
+    // lv_anim_set_exec_cb(&widget->anim, (lv_anim_exec_xcb_t)set_img_src);
+    lv_anim_set_custom_exec_cb(&widget->anim, set_img_custom_src);
     lv_anim_set_repeat_count(&widget->anim, LV_ANIM_REPEAT_INFINITE);
     lv_anim_set_delay(&widget->anim, 1000);
     lv_anim_start(&widget->anim);
