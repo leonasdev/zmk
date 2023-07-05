@@ -141,12 +141,87 @@ LV_IMG_DECLARE(countdown_029)
 LV_IMG_DECLARE(countdown_030)
 LV_IMG_DECLARE(countdown_031)
 
+LV_IMG_DECLARE(rick_000)
+LV_IMG_DECLARE(rick_001)
+LV_IMG_DECLARE(rick_002)
+LV_IMG_DECLARE(rick_003)
+LV_IMG_DECLARE(rick_004)
+LV_IMG_DECLARE(rick_005)
+LV_IMG_DECLARE(rick_006)
+LV_IMG_DECLARE(rick_007)
+LV_IMG_DECLARE(rick_008)
+LV_IMG_DECLARE(rick_009)
+LV_IMG_DECLARE(rick_010)
+LV_IMG_DECLARE(rick_011)
+LV_IMG_DECLARE(rick_012)
+LV_IMG_DECLARE(rick_013)
+LV_IMG_DECLARE(rick_014)
+LV_IMG_DECLARE(rick_015)
+LV_IMG_DECLARE(rick_016)
+LV_IMG_DECLARE(rick_017)
+LV_IMG_DECLARE(rick_018)
+LV_IMG_DECLARE(rick_019)
+LV_IMG_DECLARE(rick_020)
+LV_IMG_DECLARE(rick_021)
+LV_IMG_DECLARE(rick_022)
+LV_IMG_DECLARE(rick_023)
+LV_IMG_DECLARE(rick_024)
+LV_IMG_DECLARE(rick_025)
+LV_IMG_DECLARE(rick_026)
+LV_IMG_DECLARE(rick_027)
+LV_IMG_DECLARE(rick_028)
+LV_IMG_DECLARE(rick_029)
+LV_IMG_DECLARE(rick_030)
+LV_IMG_DECLARE(rick_031)
+LV_IMG_DECLARE(rick_032)
+LV_IMG_DECLARE(rick_033)
+LV_IMG_DECLARE(rick_034)
+LV_IMG_DECLARE(rick_035)
+LV_IMG_DECLARE(rick_036)
+LV_IMG_DECLARE(rick_037)
+LV_IMG_DECLARE(rick_038)
+LV_IMG_DECLARE(rick_039)
+LV_IMG_DECLARE(rick_040)
+LV_IMG_DECLARE(rick_041)
+LV_IMG_DECLARE(rick_042)
+LV_IMG_DECLARE(rick_043)
+LV_IMG_DECLARE(rick_044)
+LV_IMG_DECLARE(rick_045)
+LV_IMG_DECLARE(rick_046)
+LV_IMG_DECLARE(rick_047)
+LV_IMG_DECLARE(rick_048)
+LV_IMG_DECLARE(rick_049)
+LV_IMG_DECLARE(rick_050)
+LV_IMG_DECLARE(rick_051)
+LV_IMG_DECLARE(rick_052)
+LV_IMG_DECLARE(rick_053)
+LV_IMG_DECLARE(rick_054)
+LV_IMG_DECLARE(rick_055)
+LV_IMG_DECLARE(rick_056)
+LV_IMG_DECLARE(rick_057)
+LV_IMG_DECLARE(rick_058)
+LV_IMG_DECLARE(rick_059)
+LV_IMG_DECLARE(rick_060)
+LV_IMG_DECLARE(rick_061)
+LV_IMG_DECLARE(rick_062)
+LV_IMG_DECLARE(rick_063)
+LV_IMG_DECLARE(rick_064)
+
 const struct Animation countdown_anim = {
     .frameCount = 32,
     .timeGap = 130,
     .repetition = 1,
     .images = {
         &countdown_000, &countdown_001, &countdown_002, &countdown_003, &countdown_004, &countdown_005, &countdown_006, &countdown_007, &countdown_008, &countdown_009, &countdown_010, &countdown_011, &countdown_012, &countdown_013, &countdown_014, &countdown_015, &countdown_016, &countdown_017, &countdown_018, &countdown_019, &countdown_020, &countdown_021, &countdown_022, &countdown_023, &countdown_024, &countdown_025, &countdown_026, &countdown_027, &countdown_028, &countdown_029, &countdown_030, &countdown_031
+    }
+};
+
+const struct Animation rick_anim = {
+    .frameCount = 65,
+    .timeGap = 40,
+    .repetition = 3,
+    .images = {
+        &rick_000, &rick_001, &rick_002, &rick_003, &rick_004, &rick_005, &rick_006, &rick_007, &rick_008, &rick_009, &rick_010, &rick_011, &rick_012, &rick_013, &rick_014, &rick_015, &rick_016, &rick_017, &rick_018, &rick_019, &rick_020, &rick_021, &rick_022, &rick_023, &rick_024, &rick_025, &rick_026, &rick_027, &rick_028, &rick_029, &rick_030, &rick_031, &rick_032, &rick_033, &rick_034, &rick_035, &rick_036, &rick_037, &rick_038, &rick_039, &rick_040, &rick_041, &rick_042, &rick_043, &rick_044, &rick_045, &rick_046, &rick_047, &rick_048, &rick_049, &rick_050, &rick_051, &rick_052, &rick_053, &rick_054, &rick_055, &rick_056, &rick_057, &rick_058, &rick_059, &rick_060, &rick_061, &rick_062, &rick_063, &rick_064
     }
 };
 
@@ -160,7 +235,7 @@ const struct Animation rocket_rush_anim = {
 };
 
 int currentAnimIdx = 0;
-const struct Animation *anims[] = {&countdown_anim, &rocket_rush_anim};
+const struct Animation *anims[] = {&countdown_anim, &rick_anim, &rocket_rush_anim};
 
 
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
