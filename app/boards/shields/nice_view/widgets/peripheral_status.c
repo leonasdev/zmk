@@ -115,7 +115,7 @@ const struct Animation rocket_rush_anim = {
     .frameCount = 78,
     .timeGap = 40,
     .repetition = -1,
-    .images = rocket_rush_images;
+    .images = rocket_rush_images
 };
 
 
