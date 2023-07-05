@@ -247,6 +247,7 @@ uint8_t images_len;
 
 long long int idx = 0;
 struct zmk_widget_status *lastWidget;
+void set_img_src(void *var, int32_t val);
 
 void set_anim(){
     // Params
