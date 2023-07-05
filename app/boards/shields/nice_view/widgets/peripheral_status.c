@@ -270,12 +270,11 @@ void set_anim(){
 long long int framesPlayed = 0;
 void set_img_src(void *var, int32_t val) {
     lv_obj_t *img = (lv_obj_t *)var;
-    struct Animation anim = anims[currentAnimIdx];
     
-    lv_img_set_src(img, anim.images[val]);
-    if(anim.repetition != -1){
+    lv_img_set_src(img, anims[currentAnimIdx].images[val]);
+    if(anims[currentAnimIdx].repetition != -1){
         framesPlayed++;
-        if(anim.repetition * anim.frameCount == framesPlayed){
+        if(anims[currentAnimIdx].repetition * anims[currentAnimIdx].frameCount == framesPlayed){
             currentAnimIdx++;
             set_anim();
         }
