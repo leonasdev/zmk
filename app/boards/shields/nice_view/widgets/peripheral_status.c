@@ -207,6 +207,56 @@ LV_IMG_DECLARE(rick_062)
 LV_IMG_DECLARE(rick_063)
 LV_IMG_DECLARE(rick_064)
 
+LV_IMG_DECLARE(dance_000)
+LV_IMG_DECLARE(dance_001)
+LV_IMG_DECLARE(dance_002)
+LV_IMG_DECLARE(dance_003)
+LV_IMG_DECLARE(dance_004)
+LV_IMG_DECLARE(dance_005)
+LV_IMG_DECLARE(dance_006)
+LV_IMG_DECLARE(dance_007)
+LV_IMG_DECLARE(dance_008)
+LV_IMG_DECLARE(dance_009)
+LV_IMG_DECLARE(dance_010)
+LV_IMG_DECLARE(dance_011)
+LV_IMG_DECLARE(dance_012)
+LV_IMG_DECLARE(dance_013)
+LV_IMG_DECLARE(dance_014)
+LV_IMG_DECLARE(dance_015)
+LV_IMG_DECLARE(dance_016)
+LV_IMG_DECLARE(dance_017)
+LV_IMG_DECLARE(dance_018)
+LV_IMG_DECLARE(dance_019)
+LV_IMG_DECLARE(dance_020)
+LV_IMG_DECLARE(dance_021)
+LV_IMG_DECLARE(dance_022)
+LV_IMG_DECLARE(dance_023)
+LV_IMG_DECLARE(dance_024)
+LV_IMG_DECLARE(dance_025)
+LV_IMG_DECLARE(dance_026)
+LV_IMG_DECLARE(dance_027)
+LV_IMG_DECLARE(dance_028)
+LV_IMG_DECLARE(dance_029)
+LV_IMG_DECLARE(dance_030)
+LV_IMG_DECLARE(dance_031)
+LV_IMG_DECLARE(dance_032)
+LV_IMG_DECLARE(dance_033)
+LV_IMG_DECLARE(dance_034)
+LV_IMG_DECLARE(dance_035)
+LV_IMG_DECLARE(dance_036)
+LV_IMG_DECLARE(dance_037)
+LV_IMG_DECLARE(dance_038)
+LV_IMG_DECLARE(dance_039)
+LV_IMG_DECLARE(dance_040)
+LV_IMG_DECLARE(dance_041)
+LV_IMG_DECLARE(dance_042)
+LV_IMG_DECLARE(dance_043)
+LV_IMG_DECLARE(dance_044)
+LV_IMG_DECLARE(dance_045)
+// const void *dance_images[] = {
+// &dance_000, &dance_001, &dance_002, &dance_003, &dance_004, &dance_005, &dance_006, &dance_007, &dance_008, &dance_009, &dance_010, &dance_011, &dance_012, &dance_013, &dance_014, &dance_015, &dance_016, &dance_017, &dance_018, &dance_019, &dance_020, &dance_021, &dance_022, &dance_023, &dance_024, &dance_025, &dance_026, &dance_027, &dance_028, &dance_029, &dance_030, &dance_031, &dance_032, &dance_033, &dance_034, &dance_035, &dance_036, &dance_037, &dance_038, &dance_039, &dance_040, &dance_041, &dance_042, &dance_043, &dance_044, &dance_045};
+
+
 const struct Animation countdown_anim = {
     .frameCount = 32,
     .timeGap = 130,
@@ -234,8 +284,17 @@ const struct Animation rocket_rush_anim = {
     }
 };
 
+const struct Animation dance_anim = {
+    .frameCount = 46,
+    .timeGap = 30,
+    .repetition = -1,
+    .images = {
+        &dance_000, &dance_001, &dance_002, &dance_003, &dance_004, &dance_005, &dance_006, &dance_007, &dance_008, &dance_009, &dance_010, &dance_011, &dance_012, &dance_013, &dance_014, &dance_015, &dance_016, &dance_017, &dance_018, &dance_019, &dance_020, &dance_021, &dance_022, &dance_023, &dance_024, &dance_025, &dance_026, &dance_027, &dance_028, &dance_029, &dance_030, &dance_031, &dance_032, &dance_033, &dance_034, &dance_035, &dance_036, &dance_037, &dance_038, &dance_039, &dance_040, &dance_041, &dance_042, &dance_043, &dance_044, &dance_045
+    }
+};
+
 int currentAnimIdx = 0;
-const struct Animation *anims[] = {&countdown_anim, &rick_anim, &rocket_rush_anim};
+const struct Animation *anims[] = {&countdown_anim, &rick_anim, &dance_anim};
 
 
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
