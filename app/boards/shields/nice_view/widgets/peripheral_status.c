@@ -294,7 +294,7 @@ const struct Animation dance_anim = {
 };
 
 int currentAnimIdx = 0;
-const struct Animation *anims[] = {&countdown_anim, &rick_anim, &dance_anim};
+const struct Animation *anims[] = {&countdown_anim, &rick_anim, &rocket_rush_anim};
 
 
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
